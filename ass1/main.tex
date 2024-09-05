@@ -1,0 +1,59 @@
+\documentclass[12pt,twoside]{article}
+\usepackage[a4paper,top=2cm,left=2cm,right=2cm,bottom=2cm,includefoot,includehead]{geometry}
+\usepackage{graphicx}
+\usepackage[numbers]{natbib} % Add this line for natbib package
+\usepackage{fancyhdr}
+
+\pagestyle{fancy} % Set the page style to fancy
+\fancyhf{} % Clear all header and footer fields
+
+% Define the header and footer content for odd and even pages
+\fancyhead[CE,CO]{School of Electrical Engineering} % Left header on even pages, right header on odd pages
+% \fancyhead[RE,LO]{Right Header} % Right header on even pages, left header on odd pages
+\fancyfoot[LE,RO]{\thepage} % Page number on left footer of even pages and right footer of odd pages
+\fancyfoot[RE,LO]{ELEC3251} % Left footer on odd pages, right footer on even pages
+
+\begin{document}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\begin{titlepage}
+    \begin{center}
+
+        \includegraphics[width=0.2\textwidth]{LOGO_Square.pdf}
+
+        \vspace*{0.4cm}
+        School of Electrical Engineering \\
+        University of Newcastle
+        
+        \vspace{1cm}
+        \huge
+        \textbf{\textsf{ELEC3251 \\ Assignment 1}}
+
+        \vspace{0.5cm}
+        \Large
+        Practical and Theoretical Analysis of \\ Buck Converter and Flyback Converter
+
+        \vspace{1.5cm}
+        \normalsize
+        \begin{tabular}{l|r}
+            \textbf{Liam Patey-Dennis} & c3349900 \\
+            \textbf{Josh} & c3472834
+        \end{tabular}
+        \vfill    
+    \end{center}
+\end{titlepage}
+
+
+\section{Results}
+\newpage
+\section{Discussion}
+\citep{BS412-EN}
+\citep{jay1995write}
+\newpage
+\section{Conclusion}
+This is blank text.
+\newpage
+\bibliographystyle{IEEEtranN}
+\bibliography{references}
+
+\end{document}
