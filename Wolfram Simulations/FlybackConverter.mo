@@ -1,0 +1,35 @@
+model FlybackConverter
+  Modelica.Electrical.Analog.Sources.ConstantVoltage constantVoltage1(V = 5) annotation(Placement(visible = true, transformation(origin = {-120, 10}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
+  Modelica.Electrical.Analog.Basic.Ground ground1 annotation(Placement(visible = true, transformation(origin = {-120, -30}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Electrical.Analog.Ideal.IdealClosingSwitch switch annotation(Placement(visible = true, transformation(origin = {-80, -5}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
+  Modelica.Electrical.Analog.Ideal.IdealDiode diode annotation(Placement(visible = true, transformation(origin = {-10, 40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Electrical.Analog.Basic.Capacitor capacitor1(C = 1.5e-6) annotation(Placement(visible = true, transformation(origin = {20, 25}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
+  Modelica.Electrical.Analog.Basic.Resistor resistor1(R = 220) annotation(Placement(visible = true, transformation(origin = {60, 25}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
+  Modelica.Electrical.Analog.Basic.Resistor resistor2(R = 1e6) annotation(Placement(visible = true, transformation(origin = {-40, -5}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
+  Modelica.Blocks.Sources.BooleanPulse booleanPulse1(period = 2.4e-4, width = 50) annotation(Placement(visible = true, transformation(origin = {-130, 70}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Electrical.Analog.Basic.Inductor inductor1(L = 0.003) annotation(Placement(visible = true, transformation(origin = {-95, 25}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
+  Modelica.Electrical.Analog.Semiconductors.ZDiode zener(Bv = 25) annotation(Placement(visible = true, transformation(origin = {85, 25}, extent = {{-10, -10}, {10, 10}}, rotation = -270)));
+  InverterParts.threeWIndingIdealTransformer threeWIndingIdealTransformer1(n12 = 1, n13 = 1) annotation(Placement(visible = true, transformation(origin = {-50, 35}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Electrical.Analog.Ideal.IdealDiode diode1 annotation(Placement(visible = true, transformation(origin = {-55, 10}, extent = {{-10, -10}, {10, 10}}, rotation = -270)));
+equation
+  connect(ground1.p, constantVoltage1.n) annotation(Line(visible = true, origin = {-120, -10}, points = {{-0, -10}, {0, 10}}, color = {0, 0, 255}));
+  connect(switch.n, constantVoltage1.n) annotation(Line(visible = true, origin = {-100, -13.75}, points = {{20, -1.25}, {20, -6.25}, {-20, -6.25}, {-20, 13.75}}, color = {0, 0, 255}));
+  connect(capacitor1.p, diode.n) annotation(Line(visible = true, origin = {13.333, 38.333}, points = {{6.667, -3.333}, {6.667, 1.667}, {-13.333, 1.667}}, color = {0, 0, 255}));
+  connect(resistor1.p, diode.n) annotation(Line(visible = true, origin = {40, 38.333}, points = {{20, -3.333}, {20, 1.667}, {-40, 1.667}}, color = {0, 0, 255}));
+  connect(resistor2.n, switch.n) annotation(Line(visible = true, origin = {-60, -17.5}, points = {{20, 2.5}, {20, -2.5}, {-20, -2.5}, {-20, 2.5}}, color = {0, 0, 255}));
+  connect(resistor1.n, capacitor1.n) annotation(Line(visible = true, origin = {40, 12.5}, points = {{20, 2.5}, {20, -2.5}, {-20, -2.5}, {-20, 2.5}}, color = {0, 0, 255}));
+  connect(booleanPulse1.y, switch.control) annotation(Line(visible = true, origin = {-78.25, 32.5}, points = {{-40.75, 37.5}, {15.25, 37.5}, {15.25, -37.5}, {10.25, -37.5}}, color = {255, 0, 255}));
+  connect(capacitor1.n, resistor2.p) annotation(Line(visible = true, origin = {-10, 10}, points = {{30, 5}, {30, -0}, {-30, -0}, {-30, -5}}, color = {0, 0, 255}));
+  connect(inductor1.n, switch.p) annotation(Line(visible = true, origin = {-87.5, 10}, points = {{-7.5, 5}, {-7.5, -0}, {7.5, -0}, {7.5, -5}}, color = {0, 0, 255}));
+  connect(zener.n, diode.n) annotation(Line(visible = true, origin = {56.667, 38.333}, points = {{28.333, -3.333}, {28.333, 1.667}, {-56.667, 1.667}}, color = {0, 0, 255}));
+  connect(zener.p, capacitor1.n) annotation(Line(visible = true, origin = {52.5, 12.5}, points = {{32.5, 2.5}, {32.5, -2.5}, {-32.5, -2.5}, {-32.5, 2.5}}, color = {0, 0, 255}));
+  connect(constantVoltage1.p, inductor1.p) annotation(Line(visible = true, points = {{-12.5, -15}, {-12.5, 5}, {12.5, 5}, {12.5, 0}}, color = {0, 0, 255}, origin = {-107.5, 35}));
+  connect(threeWIndingIdealTransformer1.out2, diode.p) annotation(Line(visible = true, origin = {-26.667, 32.665}, points = {{-13.333, -2.665}, {6.667, -2.665}, {6.667, 7.335}}, color = {0, 0, 255}));
+  connect(threeWIndingIdealTransformer1.in2, resistor2.p) annotation(Line(visible = true, origin = {-38, 25}, points = {{-2, 15}, {3, 15}, {3, -5}, {-2, -5}, {-2, -20}}, color = {0, 0, 255}));
+  connect(threeWIndingIdealTransformer1.in1, inductor1.p) annotation(Line(visible = true, origin = {-83.333, 38.333}, points = {{23.333, 1.667}, {-11.667, 1.667}, {-11.667, -3.333}}, color = {0, 0, 255}));
+  connect(threeWIndingIdealTransformer1.out1, switch.p) annotation(Line(visible = true, origin = {-73.333, 21.667}, points = {{13.333, 8.333}, {-6.667, 8.333}, {-6.667, -16.667}}, color = {0, 0, 255}));
+  connect(threeWIndingIdealTransformer1.in3, threeWIndingIdealTransformer1.in1) annotation(Line(visible = true, origin = {-57.777, 45}, points = {{8.335, 0}, {8.335, 5}, {-7.223, 5}, {-7.223, -5}, {-2.223, -5}}, color = {10, 90, 224}));
+  connect(diode1.n, threeWIndingIdealTransformer1.out3) annotation(Line(visible = true, origin = {-52.185, 22.5}, points = {{-2.815, -2.5}, {-2.815, 0}, {2.815, 0}, {2.815, 2.5}}, color = {10, 90, 224}));
+  connect(diode1.p, resistor2.n) annotation(Line(visible = true, origin = {-47.5, -13.75}, points = {{-7.5, 13.75}, {-7.5, -6.25}, {7.5, -6.25}, {7.5, -1.25}}, color = {10, 90, 224}));
+  annotation(uses(Modelica(version = "4.0.0")), experiment(__Wolfram_NumberOfIntervals = 20000), Diagram(coordinateSystem(extent = {{-150, -90}, {150, 90}}, preserveAspectRatio = true, initialScale = 0.1, grid = {5, 5})), Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Rectangle(visible = true, lineColor = {0, 114, 195}, fillColor = {255, 255, 255}, extent = {{-100, -100}, {100, 100}}, radius = 25), Text(visible = true, textColor = {64, 64, 64}, extent = {{-150, 110}, {150, 150}}, textString = "%name")}));
+end FlybackConverter;
