@@ -4,6 +4,7 @@
 \usepackage[numbers]{natbib} % Add this line for natbib package
 \usepackage{fancyhdr}
 \usepackage{hyperref}
+\graphicspath{ {figures/} }
 
 
 
@@ -68,6 +69,14 @@ I_{oB} \approx \frac{T_{s}V_{o}}{2L}(1-D) \label{equation:Buck_DCM}
 \end{equation}
 \pagebreak
 \subsection{Ideal Simulations}
+Figure \ref{fig:buck_DCM} (A) displays the inductor current for a load resistance of 342 $\Omega$. The current reaches a minimum value of $120 $ $\mu$A, which indicates that the converter is close to the CCM-DCM boundary. Figure \ref{fig:buck_DCM} (b) displays the current for a load resistance of 345 $\Omega$. Slight distortion is observed in the waveform near the zero crossing which indicates that the converter has entered DCM. This suggests that the CCM-DCM boundary lies in the range $342 \le R_{Load} \le 345$ $\Omega$ which agrees with the theoretically expected value of 342 $\Omega$. The boundary may not lie exactly at 342 $\Omega$ because of the assumption, made in Equation \ref{equation:Buck_DCM}, that the inductor current and the output current are equal. This assumption is not correct as a small amount of current also flows through the capacitor.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{buck_DCM}
+    \caption{Buck converter inductor current for a load resistance of (A) 342 $\Omega$, and (B) 345 $\Omega$. A small amount of distortion is present in (B) which indicates that the CCM-DCM boundary lies in the range $342 \le R_{Load} \le 345$ $\Omega$.}
+    \label{fig:buck_DCM}
+\end{figure}
 
 \newpage
 \section{Flyback Converter}
