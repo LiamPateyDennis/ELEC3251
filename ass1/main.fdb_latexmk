@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1727098388.86763 "main.aux" "main.bbl" "main" 1727098392.62789 0
+["bibtex main"] 1727177798.25104 "main.aux" "main.bbl" "main" 1727179111.63328 0
   "./references.bib" 1725544936 1780 a0d3ad97bae4ab9084dcdaac50d1a22e ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/bibtex/bst/feupphdteses/IEEEtranN.bst" 1363099170 63465 52e4631827d9e4cab8ed25dc93fa95dd ""
-  "main.aux" 1727098391 6011 7901e3737c3de920c5f62dffbbf0287e "pdflatex"
+  "main.aux" 1727179110 6240 836ff9bbff9f8eb198ef451a0d667d6a "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1727098389.20073 "d:/github/elec3251/ass1/main.tex" "main.pdf" "main" 1727098392.62927 0
+["pdflatex"] 1727179107.87167 "d:/github/elec3251/ass1/main.tex" "main.pdf" "main" 1727179111.6346 0
   "C:/Users/pdidd/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1727096059 215609 685af41ea3cd3ac45395c8bb53311c2c ""
   "C:/Users/pdidd/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725413735 24265373 3e99e7ce72e55dd05cb41d43ccf292ad ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233948248 1004 54797486969f23fa377b128694d548df ""
@@ -27,7 +27,9 @@
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136761453 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136761453 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
+  "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
+  "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
@@ -181,12 +183,12 @@
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388486852 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700123922 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "LOGO_Square.pdf" 1725544936 5246 456bc821bf474e4f9917d9367f99661f ""
-  "d:/github/elec3251/ass1/main.tex" 1727098384 12961 e23970cdb983030c73c16622d34b1fd2 ""
+  "d:/github/elec3251/ass1/main.tex" 1727179107 16059 d8ae19a4d55b206d30aae861854ebb3b ""
   "figures/buck_DCM.png" 1727095308 159131 bf575084671cecb2f888240676b83bb6 ""
-  "main.aux" 1727098391 6011 7901e3737c3de920c5f62dffbbf0287e "pdflatex"
-  "main.bbl" 1727098389 939 17e18b1c2c1fb7416ea91c4f2dcc25b7 "bibtex main"
-  "main.out" 1727098391 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1727098384 12961 e23970cdb983030c73c16622d34b1fd2 ""
+  "main.aux" 1727179110 6240 836ff9bbff9f8eb198ef451a0d667d6a "pdflatex"
+  "main.bbl" 1727177798 939 17e18b1c2c1fb7416ea91c4f2dcc25b7 "bibtex main"
+  "main.out" 1727179109 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1727179107 16059 d8ae19a4d55b206d30aae861854ebb3b ""
   (generated)
   "main.aux"
   "main.log"

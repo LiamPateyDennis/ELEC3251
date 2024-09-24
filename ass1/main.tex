@@ -14,9 +14,9 @@
     voltage dir = RP,
     quadpoles/transformer core/inner = 1, %Eliminates the horizontal bars on the transformer
     quadpoles/transformer core/width = 0.6, %Adjusts the width so that the transformers are closer
-    diodes/scale = 0.7,
-    capacitors/scale = 0.8,
-    resistors/scale = 0.8
+    diodes/scale = 0.6,
+    capacitors/scale = 0.6,
+    resistors/scale = 0.6,
 }
 
 %% shifted open voltage 
@@ -147,7 +147,7 @@ The output voltage of the non-ideal converter for the ideal duty cycle is shown 
 \subsection{Ideal Calculations}
     \begin{figure}[htp]
     \centering
-    \begin{tikzpicture}[scale=1.6, transform shape]
+    \begin{tikzpicture}[scale=1.4, transform shape]
         % \caption{Ideal Flyback Converter}
         %draw tri and quadpoles
         \node[transformer core, anchor = A1, scale = 0.8](transformer) at (2,2){};
@@ -182,8 +182,81 @@ The output voltage of the non-ideal converter for the ideal duty cycle is shown 
         \label{tikzpicture:idealFlyback}
         \caption{Ideal Flyback Converter}
     \end{figure}
-\subsection{Ideal Simulations}
+    \noindent
+    To determine the required duty cycle for the ideal flyback converter the zero volt seconds rule is applied. 
+    It is assumed that no lossed occur at the transformer, switches and diodes. It also assumed that the transform turns ratio is 1:1.
+    For the case in which the switch is closed, 
+    \begin{equation}
+        V_d - V_L = 0
+    \end{equation}
+    The secondary side has no influence, as the inductor is assumed to be in steady state. 
+    For the case where the switch is open,
+    \begin{equation}
+        -V_L - V_o = 0
+    \end{equation}
+    The application of the zero-volts second rule,
+    \begin{equation}
+        DT_s \cdot V_{L \: on} + (1-D)T_s \cdot V_{L\:off} = 0
+    \end{equation}
+    Cancel out $T_s$, then substitute equations $V_L$ equations,
+    \begin{equation}
+        D \cdot V_d+ (1-D) \cdot -V_o = 0
+    \end{equation}
+    Therefore, the duty cycle becomes,
+    \begin{equation}
+        D  = \dfrac{V_o}{V_d+V_o}
+    \end{equation}
+    The design specifications desire $V_o$ to be 10V but specifys the input, $V_d$, to be a range of [5,12]V
+    For $V_{d\:min}$, the duty cycle ends up being,
+    \begin{equation}
+        D = \dfrac{10}{5+10} = 66.6\%
+    \end{equation}
+    and for $V_{d\:max}$,
+    \begin{equation}
+        D = \dfrac{10}{12+10} = 45.45\%
+    \end{equation}
 \subsection{Non-Ideal Calculations}
+\begin{figure}[htp]
+    \centering
+    \begin{tikzpicture}[scale=1.4, transform shape]
+        % \caption{Ideal Flyback Converter}
+        %draw tri and quadpoles
+        \node[transformer core, anchor = A1, scale = 0.8](transformer) at (2,2){};
+        \node[circ](c1) at (transformer.inner dot A1){};
+        \node[circ](c2) at (transformer.inner dot B2){};
+        \node[npn, anchor = collector, scale = 0.8](npn) at (2,0){};
+        
+        %Primary
+        \draw (0,0) to [vsource,v=V,scale=0.8] ++(0,2)
+         to (0,2)
+         to [R,l^=\footnotesize $R_p$] (2,2)
+         to (transformer.A1) % current here
+         (transformer.A2) -- (npn.collector)
+         (npn.emitter) --++(0,-0.5) -| (0,0);
+        
+        %Secondary
+         \draw (transformer.B1) to[Do] ++ (2,0) coordinate(A)
+         (A) to[C] (A |- transformer.B2)
+         (transformer.B2) to (A |- transformer.B2);
+        
+         \draw (A) ++(1,0) coordinate(B)
+         (A)--(B)
+         (B) to [R,v^=$V_o$] (B|- transformer.B2)
+         (B|- transformer.B2) -- (A |- transformer.B2);
+        
+        % \draw (npn.C) to[open shifted, v^=$v_Q$](npn.E);
+        % \draw (npn.B) to[open shifted, v=$v_{be}$, voltage shift=-1](npn.E);
+        \draw (transformer.A1) to[open shifted, v=\footnotesize $V_L$](transformer.A2);
+        \draw (transformer.B1) to[open shifted, v^>=\footnotesize$V_L$](transformer.B2);
+        
+        
+        \end{tikzpicture}
+        \label{tikzpicture:nonidealFlyback}
+        \caption{Non-Ideal Flyback Converter}
+    \end{figure}
+    \noindent The non-ideal components of the current flyback converter can be 
+    modelled like this. This included resistances represent the internal 
+\subsection{Ideal Simulations}
 \subsection{Non-Ideal Simulations}
 \subsection{Results}
 \newpage
