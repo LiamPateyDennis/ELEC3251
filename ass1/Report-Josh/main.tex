@@ -5,7 +5,30 @@
 \usepackage{fancyhdr}
 \usepackage{hyperref}
 \usepackage{amsmath}
+\usepackage{circuitikz}
 \graphicspath{ {figures/} }
+
+
+\ctikzset{
+    resistor = american,
+    % inductor = american,
+    voltage = raised ,
+    voltage dir = old,
+    quadpoles/transformer core/inner = 1, %Eliminates the horizontal bars on the transformer
+    quadpoles/transformer core/width = 0.8, %Adjusts the width so that the transformers are closer
+    diodes/scale = 0.6,
+    capacitors/scale = 0.6,
+    resistors/scale = 0.6,
+    inductors/scale = 0.8,
+    % bipoles/label_distance = 4pt,
+    % switch/scale = 0.8,
+    % bipoles/length = 1cm,
+}
+
+%% shifted open voltage 
+\tikzset{open shifted/.style={
+    open ,open voltage position=legacy, voltage shift=-0.9}
+}
 
 
 
@@ -62,7 +85,7 @@ The output voltage ripple ($\Delta V_o$) of an ideal Buck converter is given by 
 \begin{equation}
 C = \frac{V_o}{\Delta V_{o}}\frac{T_{s}^{2}(1-D)}{8L} \label{equation:Buck_cap}
 \end{equation}
-The output power of the converter will be limited by the ratings of the components in the circuit. As the output voltage of the converter is required to remain constant at $5$ V, only the output current can be adjusted to suit the ratings of the components. The inductor selected for the circuit is the Murata \#1410516C, which has a maximum DC current of $1.6$ A \cite{RNX0}. A IRFZ24NPbF MOSFET has been selected for the switch, this component has a maximum DC current rating of $17$ A \cite{RNX1}. The selected diode is an SB120 which has a maximum DC current of $1.0$ A \cite{RNX2}. The inductor current will equal the output current, assuming the voltage across the capacitor remains constant. Therefore, the output current must be less than $1.6$ A, to avoid causing damage to the inductor. The diode will only conduct when the switch is off, therefore the DC current flowing through the diode is $I_{D} = (1-D)I_{o}$. For $I_{o} = 1.6$ A the diode current is $0.93$ A, which is less than the maximum rating of the device. Therefore, the load resistance must be selected such that $I_{o} \le 1.6$ A. Using Ohm’s law this inequality is equivalent to $R_{Load} \ge 3.125$ $\Omega$. The smallest resistor provided in the laboratory kit is $3.9$ $\Omega$ so this resistance will be used for the load.\par
+The output power of the converter will be limited by the ratings of the components in the circuit. As the output voltage of the converter is required to remain constant at $5$ V, only the output current can be adjusted to suit the ratings of the components. The inductor selected for the circuit is the Murata \#1410516C, which has a maximum DC current of $1.6$ A \cite{RN1}. A IRFZ24NPbF MOSFET has been selected for the switch, this component has a maximum DC current rating of $17$ A \cite{RN3}. The selected diode is an SB120 which has a maximum DC current of $1.0$ A \cite{RN4}. The inductor current will equal the output current, assuming the voltage across the capacitor remains constant. Therefore, the output current must be less than $1.6$ A, to avoid causing damage to the inductor. The diode will only conduct when the switch is off, therefore the DC current flowing through the diode is $I_{D} = (1-D)I_{o}$. For $I_{o} = 1.6$ A the diode current is $0.93$ A, which is less than the maximum rating of the device. Therefore, the load resistance must be selected such that $I_{o} \le 1.6$ A. Using Ohm’s law this inequality is equivalent to $R_{Load} \ge 3.125$ $\Omega$. The smallest resistor provided in the laboratory kit is $3.9$ $\Omega$ so this resistance will be used for the load.\par
 \vspace{5mm}
 \noindent The continuous conduction mode (CCM) and discontinuous conduction mode (DCM) boundary occurs when the current flowing through the inductor reaches $0$ A. For the ideal Buck converter this will occur for a DC output current ($I_{oB}$) which can be found using Equation \ref{equation:Buck_DCM}. For the designed converter the minimum DC output current is $I_{oB} = 14.6$ mA, which is equivalent to an output load of $342$ $\Omega$.
 \begin{equation}
@@ -97,7 +120,7 @@ Wolfram System Modeller (Wolfram) was used to simulate the performance of the de
 \newpage
 
 \subsection{Non Ideal Calculations}
-The previous calculations and simulations neglect many real-world effects that will affect the circuit's performance. Previously, no voltage losses were assumed to occur across the switch. This assumption is invalid as all switches have non-zero on resistances. Furthermore, it was assumed that no voltage drop occurs across the diode. All diodes have a non-zero voltage drop, which is required to overcome the potential barrier formed at the P-N junction of these devices. In addition, the windings of an inductor are not perfect conductors and hence have resistance. These effects will result in the output voltage of the converter being lower than the theoretically expected value. Figure \ref{fig:Buck_nonIdealCircuits} displays equivalent circuit models which can be used to account for these effects when (A) the switch is on and (B) when the switch is off. Applying Kirchoff’s voltage law (KVL) to the outer loop of each circuit, results in Equations \ref{equation:KVL_on} and \ref{equation:KVL_off}.
+The previous calculations and simulations neglect many real-world effects that will affect the circuit's performance. Previously, no voltage losses were assumed to occur across the switch. This assumption is invalid as all switches have non-zero on resistances. Furthermore, it was assumed that no voltage drop occurs across the diode. All diodes have a non-zero voltage drop, which is required to overcome the potential barrier formed at the P-N junction of these devices. In addition, the windings of an inductor are not perfect conductors and hence have resistance. These effects will result in the output voltage of the converter being lower than the theoretically expected value. Applying Kirchoff’s voltage law (KVL) when the switch is on and when the switch is off results in Equations \ref{equation:KVL_on} and \ref{equation:KVL_off}.
 \begin{equation}
 V_{L,on} = V_{d} - V_{o} - V_{loss, on} = V_{d} - V_{o} - (R_{DS}+ R_{L})i_{L} \label{equation:KVL_on}
 \end{equation}
@@ -118,7 +141,7 @@ Which can be used with the previous equation to obtain Equation \ref{equation:Bu
 \begin{align}
 V_{o} &= \frac{R_{Load}}{(1+2D)R_{Load} - R_{L} - DR_{DS}}\left\{DV_{d} - (1-D)V_{f} \label{equation:Buck_nonIdealTF}\right\}
 \end{align}
-\noindent For the ideal duty cycle ($D = 41.67$\%) with the parameters $R_{DS} = 0.07$ $\Omega$, $R_{L} = 1.6$ $\Omega$, $V_{f} = 0.7$ V and a load current of $i_{L} = 1.28$ A ($R_{Load} = 3.9$ $\Omega$), the expected output voltage of the converter is $V_{o} =3.24$ V \cite{RNX1, RNX0, RNX2}. The duty cycle required to obtain an output of 5 V is $D = 61.44$\%.\par
+\noindent For the ideal duty cycle ($D = 41.67$\%) with the parameters $R_{DS} = 0.07$ $\Omega$, $R_{L} = 1.6$ $\Omega$, $V_{f} = 0.7$ V and a load current of $i_{L} = 1.28$ A ($R_{Load} = 3.9$ $\Omega$), the expected output voltage of the converter is $V_{o} =3.24$ V \cite{RN1, RN3, RN4}. The duty cycle required to obtain an output of 5 V is $D = 61.44$\%.\par
 \vspace{5mm}
 \noindent The CCM-DCM boundary occurs when the output current is approximately equal to half of the peak current through the inductor. The peak current through the inductor is given by Equation \ref{equation:buck_iPeak}.\par
 \begin{equation}
