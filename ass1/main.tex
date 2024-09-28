@@ -8,15 +8,21 @@
 \usepackage{circuitikz}
 \graphicspath{ {figures/} }
 
+
 \ctikzset{
     resistor = american,
+    % inductor = american,
     voltage = raised ,
-    voltage dir = RP,
+    voltage dir = old,
     quadpoles/transformer core/inner = 1, %Eliminates the horizontal bars on the transformer
-    quadpoles/transformer core/width = 0.6, %Adjusts the width so that the transformers are closer
+    quadpoles/transformer core/width = 0.8, %Adjusts the width so that the transformers are closer
     diodes/scale = 0.6,
     capacitors/scale = 0.6,
     resistors/scale = 0.6,
+    inductors/scale = 0.8,
+    % bipoles/label_distance = 4pt,
+    % switch/scale = 0.8,
+    % bipoles/length = 1cm,
 }
 
 %% shifted open voltage 
@@ -145,7 +151,7 @@ The output voltage of the non-ideal converter for the ideal duty cycle is shown 
 \newpage
 \section{Flyback Converter}
 \subsection{Ideal Calculations}
-    \begin{figure}[htp]
+\begin{figure}[htp]
     \centering
     \begin{tikzpicture}[scale=1.4, transform shape]
         % \caption{Ideal Flyback Converter}
@@ -153,29 +159,32 @@ The output voltage of the non-ideal converter for the ideal duty cycle is shown 
         \node[transformer core, anchor = A1, scale = 0.8](transformer) at (2,2){};
         \node[circ](c1) at (transformer.inner dot A1){};
         \node[circ](c2) at (transformer.inner dot B2){};
-        \node[npn, anchor = collector, scale = 0.8](npn) at (2,0){};
+        % \node[switch, scale = 0.8](switch1) at (2,0){};
         
         %Primary
-        \draw (0,0) to [vsource,v=V,scale=0.8] ++(0,2)
+        \draw (0,-1)
+         to [open,v>=\footnotesize $V_d$,o-o] ++(0,3)
          to (0,2)
-         to [short, f=$i_p$] (transformer.A1) % current here
-         (transformer.A2) -- (npn.collector)
-         (npn.emitter) --++(0,-0.5) -| (0,0);
+         to (2,2)
+         to (transformer.A1) % current here
+         (transformer.A2) to [switch,transform shape] ++(0,-1.5)
+         |- (0,-1);
+         
         
         %Secondary
          \draw (transformer.B1) to[Do] ++ (2,0) coordinate(A)
          (A) to[C] (A |- transformer.B2)
-         (transformer.B2) to[short,i = $i_s$] (A |- transformer.B2);
+         (transformer.B2) to (A |- transformer.B2);
         
          \draw (A) ++(1,0) coordinate(B)
          (A)--(B)
-         (B) to [R,v^=U] (B|- transformer.B2)
+         (B) to [R,v^=\footnotesize $V_o$] (B|- transformer.B2)
          (B|- transformer.B2) -- (A |- transformer.B2);
         
-        \draw (npn.C) to[open shifted, v^=$v_Q$](npn.E);
-        \draw (npn.B) to[open shifted, v=$v_{be}$, voltage shift=-1](npn.E);
-        \draw (transformer.A1) to[open shifted, v=$v_p$](transformer.A2);
-        \draw (transformer.B1) to[open shifted, v^=$v_s$](transformer.B2);
+        % \draw (npn.C) to[open shifted, v^=$v_Q$](npn.E);
+        % \draw (npn.B) to[open shifted, v=$v_{be}$, voltage shift=-1](npn.E);
+        \draw (transformer.A1) to[open shifted, v=\footnotesize $V_L$](transformer.A2);
+        \draw (transformer.B1) to[open shifted, v^>=\footnotesize$V_L$](transformer.B2);
         
         
         \end{tikzpicture}
@@ -197,6 +206,7 @@ The output voltage of the non-ideal converter for the ideal duty cycle is shown 
     The application of the zero-volts second rule,
     \begin{equation}
         DT_s \cdot V_{L \: on} + (1-D)T_s \cdot V_{L\:off} = 0
+        \label{equation:zerovoltseconds}
     \end{equation}
     Cancel out $T_s$, then substitute equations $V_L$ equations,
     \begin{equation}
@@ -209,53 +219,110 @@ The output voltage of the non-ideal converter for the ideal duty cycle is shown 
     The design specifications desire $V_o$ to be 10V but specifys the input, $V_d$, to be a range of [5,12]V
     For $V_{d\:min}$, the duty cycle ends up being,
     \begin{equation}
-        D = \dfrac{10}{5+10} = 66.6\%
+        D = \dfrac{10}{5+10} = 66.67\:\%
     \end{equation}
     and for $V_{d\:max}$,
     \begin{equation}
-        D = \dfrac{10}{12+10} = 45.45\%
+        D = \dfrac{10}{12+10} = 45.45\:\%
     \end{equation}
+\newpage
 \subsection{Non-Ideal Calculations}
 \begin{figure}[htp]
     \centering
-    \begin{tikzpicture}[scale=1.4, transform shape]
+    \begin{tikzpicture}[scale=1.4, transform shape,voltage shift=-0.5]
         % \caption{Ideal Flyback Converter}
         %draw tri and quadpoles
         \node[transformer core, anchor = A1, scale = 0.8](transformer) at (2,2){};
         \node[circ](c1) at (transformer.inner dot A1){};
         \node[circ](c2) at (transformer.inner dot B2){};
-        \node[npn, anchor = collector, scale = 0.8](npn) at (2,0){};
+        % \node[switch, scale = 0.8](switch1) at (2,0){};
         
         %Primary
-        \draw (0,0) to [vsource,v=V,scale=0.8] ++(0,2)
-         to (0,2)
-         to [R,l^=\footnotesize $R_p$] (2,2)
+        \draw (-2,-1)
+         to [open,v>=\footnotesize $V_d$,o-o] ++(0,3)
+         to (-2,2)
+         to [R,l^=\footnotesize $R_{l1}$,label distance = 2pt] (0,2)
+         to [L,l^=\footnotesize $L_{l}$] (1,2)
          to (transformer.A1) % current here
-         (transformer.A2) -- (npn.collector)
-         (npn.emitter) --++(0,-0.5) -| (0,0);
+         (transformer.A2) to [switch,transform shape] ++(0,-1.5)
+         |- (-2,-1);
+         
         
         %Secondary
-         \draw (transformer.B1) to[Do] ++ (2,0) coordinate(A)
-         (A) to[C] (A |- transformer.B2)
+         \draw (transformer.B1)
+        %  to [L,l^=\footnotesize $L_{l2}$] ++(1.5,0)
+         to [R,l^=\footnotesize $R_{l2}$,label distance = 2pt] ++(1.5,0)
+         to [Do,v^=\footnotesize $V_f$] ++(1.5,0) coordinate(A)
+         (A) to [C] (A |- transformer.B2)
          (transformer.B2) to (A |- transformer.B2);
         
          \draw (A) ++(1,0) coordinate(B)
          (A)--(B)
-         (B) to [R,v^=$V_o$] (B|- transformer.B2)
+         (B) to [R,v^=\footnotesize $V_o$] (B|- transformer.B2)
          (B|- transformer.B2) -- (A |- transformer.B2);
         
         % \draw (npn.C) to[open shifted, v^=$v_Q$](npn.E);
         % \draw (npn.B) to[open shifted, v=$v_{be}$, voltage shift=-1](npn.E);
-        \draw (transformer.A1) to[open shifted, v=\footnotesize $V_L$](transformer.A2);
-        \draw (transformer.B1) to[open shifted, v^>=\footnotesize$V_L$](transformer.B2);
+        \draw (transformer.A1) to[open shifted, v=\footnotesize $V_L$,voltage shift=-0.8](transformer.A2);
+        \draw (transformer.B1) to[open shifted, v^>=\footnotesize$V_L$,voltage shift=-0.8](transformer.B2);
         
         
         \end{tikzpicture}
         \label{tikzpicture:nonidealFlyback}
         \caption{Non-Ideal Flyback Converter}
     \end{figure}
-    \noindent The non-ideal components of the current flyback converter can be 
-    modelled like this. This included resistances represent the internal 
+    \noindent The specifications for the flyback converter ask for an output of 10 V at 0.5 W. 
+    To achieve this, an average current can be calculated using ohm's law of power,
+    \begin{equation}
+        P = IV
+    \end{equation}
+    which gives $I_{avg}$ = 50 mA. This can be used to determine the load resistance with ohm's law,
+    \begin{equation}
+        V = IR
+    \end{equation}
+    Therefore, the load resistance, $R_L$ is $200\: \Omega$. The closest available load resistor is $220\: \Omega$ which can be reversed to get the average current,
+    $I_{avg}$ = 45.45 mA and output power, $P = 0.4545$ W which will be used for further calculations.
+    The non-ideal components of the current flyback converter can be 
+    modelled like this. The primary side is the only active when the 
+    switch is on, this means the internal MOSFET resistance and the internal 
+    transformer resistance can be added together like this,
+    \begin{equation}
+        R_{l1} = R_{mosfet} + R_{transformer}
+        \label{equation:Rp}
+    \end{equation}
+    For the case when switch is closed,
+    \begin{equation}
+        V_d - V_{Rl1} - V_{Ll} - V_L = 0
+    \end{equation}
+    The voltage across the leakage inductance cannot be known, instead the 
+    leakage inductance will be ratioed in terms of the magnetising inductance. The magnetising 
+    inductance is $3$ mH and the leakage inductance at the primary side is $9\:\mu$H. Therefore the case when
+    the switch is closed is simplified to,
+    \begin{equation}
+        V_d - V_{Rl1} - V_L = 0
+    \end{equation}
+    Therefore the case for the switch is open,
+    \begin{equation}
+        -\dfrac{3}{3.009}V_L - V_{Rl2} - V_f - V_o = 0
+    \end{equation}
+    Applying the zero volt seconds rule, \ref{equation:zerovoltseconds}, and cancelling out Ts,
+    \begin{equation}
+        D \cdot( V_d - V_{Rl1} ) + (1-D) \cdot \dfrac{3.009}{3}(- V_{Rl2} - V_f - V_o) = 0
+    \end{equation}
+    rearranging to make duty cycle the subject,
+    \begin{equation}
+        D  = \frac{\dfrac{3.009}{3}(V_{Rl2} + V_f + V_o)}{V_d - V_{Rl1} + \dfrac{3.009}{3}(V_{Rl2} + V_f + V_o)}
+    \end{equation}
+    Equation \ref{equation:Rp}, is used to calculate $R_{l1} = 1.47$ and referring to the 
+    calculated average current, $I_{avg} = 45.45$ mA. The duty cycle can 
+    be calculated for the maximum and minimum of the desired $V_d$ range [5,12]V. For $V_{d\:max}$,
+    \begin{equation}
+        D  = \frac{\dfrac{3.009}{3}(1.7\cdot I_{avg} + 0.7 + 10)}{12 - 1.47\cdot I_{avg} + \dfrac{3.009}{3}(1.7\cdot I_{avg} + 0.7 + 10)} = 47.53\: \%
+    \end{equation}
+    and for $V_d\:min$,
+    \begin{equation}
+        D  = \frac{\dfrac{3.009}{3}(1.7\cdot I_{avg} + 0.7 + 10)}{5 - 1.47\cdot I_{avg} + \dfrac{3.009}{3}(1.7\cdot I_{avg} + 0.7 + 10)} = 68.66\: \%
+    \end{equation}
 \subsection{Ideal Simulations}
 \subsection{Non-Ideal Simulations}
 \subsection{Results}
