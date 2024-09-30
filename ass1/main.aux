@@ -6,9 +6,9 @@
 \providecommand\BKM@entry[2]{}
 \BKM@entry{id=1,dest={73656374696F6E2E31},srcline={73}}{5C3337365C3337375C303030425C303030755C303030635C3030306B5C3030305C3034305C303030435C3030306F5C3030306E5C303030765C303030655C303030725C303030745C303030655C30303072}
 \BKM@entry{id=2,dest={73756273656374696F6E2E312E31},srcline={74}}{5C3337365C3337375C303030495C303030645C303030655C303030615C3030306C5C3030305C3034305C303030435C303030615C3030306C5C303030635C303030755C3030306C5C303030615C303030745C303030695C3030306F5C3030306E5C30303073}
-\citation{RNX0}
-\citation{RNX1}
-\citation{RNX2}
+\citation{RN1}
+\citation{RN3}
+\citation{RN4}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Buck Converter}{2}{section.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Ideal Calculations}{2}{subsection.1.1}\protected@file@percent }
 \newlabel{equation:Buck_TF}{{1}{2}{Ideal Calculations}{equation.1.1}{}}
@@ -17,72 +17,110 @@
 \newlabel{equation:Buck_DCM}{{4}{2}{Ideal Calculations}{equation.1.4}{}}
 \BKM@entry{id=3,dest={73756273656374696F6E2E312E32},srcline={93}}{5C3337365C3337375C303030495C303030645C303030655C303030615C3030306C5C3030305C3034305C303030535C303030695C3030306D5C303030755C3030306C5C303030615C303030745C303030695C3030306F5C3030306E5C30303073}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Ideal Simulations}{3}{subsection.1.2}\protected@file@percent }
-\BKM@entry{id=4,dest={73756273656374696F6E2E312E33},srcline={106}}{5C3337365C3337375C3030304E5C3030306F5C3030306E5C3030305C3034305C303030495C303030645C303030655C303030615C3030306C5C3030305C3034305C303030435C303030615C3030306C5C303030635C303030755C3030306C5C303030615C303030745C303030695C3030306F5C3030306E5C30303073}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Buck converter inductor current for a load resistance of (A) 342 $\Omega $, and (B) 345 $\Omega $. A small amount of distortion is present in (B) which indicates that the CCM-DCM boundary lies in the range $342 \le R_{Load} \le 345$ $\Omega $.}}{4}{figure.1}\protected@file@percent }
-\newlabel{fig:buck_DCM}{{1}{4}{Buck converter inductor current for a load resistance of (A) 342 $\Omega $, and (B) 345 $\Omega $. A small amount of distortion is present in (B) which indicates that the CCM-DCM boundary lies in the range $342 \le R_{Load} \le 345$ $\Omega $}{figure.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Non Ideal Calculations}{4}{subsection.1.3}\protected@file@percent }
-\newlabel{equation:KVL_on}{{5}{4}{Non Ideal Calculations}{equation.1.5}{}}
-\newlabel{equation:KVL_off}{{6}{4}{Non Ideal Calculations}{equation.1.6}{}}
-\citation{RNX1,RNX0,RNX2}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Modelica model used to simluate the operation of the ideal Buck converter.}}{3}{figure.1}\protected@file@percent }
+\newlabel{fig:Buck_idealModel}{{1}{3}{Modelica model used to simluate the operation of the ideal Buck converter}{figure.1}{}}
+\BKM@entry{id=4,dest={73756273656374696F6E2E312E33},srcline={120}}{5C3337365C3337375C3030304E5C3030306F5C3030306E5C3030305C3034305C303030495C303030645C303030655C303030615C3030306C5C3030305C3034305C303030435C303030615C3030306C5C303030635C303030755C3030306C5C303030615C303030745C303030695C3030306F5C3030306E5C30303073}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Ideal Buck converter output voltage in steady state. An RMS value of 4.9983 V and a voltage ripple of 6.67 mV are observed.}}{4}{figure.2}\protected@file@percent }
+\newlabel{fig:Buck_idealVout}{{2}{4}{Ideal Buck converter output voltage in steady state. An RMS value of 4.9983 V and a voltage ripple of 6.67 mV are observed}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Buck converter inductor current for a load resistance of (A) 342 $\Omega $, and (B) 345 $\Omega $. A small amount of distortion is present in (B) which indicates that the CCM-DCM boundary lies in the range $342 \le R_{Load} \le 345$ $\Omega $.}}{4}{figure.3}\protected@file@percent }
+\newlabel{fig:buck_DCM}{{3}{4}{Buck converter inductor current for a load resistance of (A) 342 $\Omega $, and (B) 345 $\Omega $. A small amount of distortion is present in (B) which indicates that the CCM-DCM boundary lies in the range $342 \le R_{Load} \le 345$ $\Omega $}{figure.3}{}}
+\citation{RN1,RN3,RN4}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Non Ideal Calculations}{5}{subsection.1.3}\protected@file@percent }
+\newlabel{equation:KVL_on}{{5}{5}{Non Ideal Calculations}{equation.1.5}{}}
+\newlabel{equation:KVL_off}{{6}{5}{Non Ideal Calculations}{equation.1.6}{}}
 \newlabel{equation:Buck_nonIdealTF}{{7}{5}{Non Ideal Calculations}{equation.1.7}{}}
-\BKM@entry{id=5,dest={73756273656374696F6E2E312E34},srcline={133}}{5C3337365C3337375C3030304E5C3030306F5C3030306E5C3030305C3034305C303030495C303030645C303030655C303030615C3030306C5C3030305C3034305C303030535C303030695C3030306D5C303030755C3030306C5C303030615C303030745C303030695C3030306F5C3030306E5C30303073}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Non Ideal Simulations}{6}{subsection.1.4}\protected@file@percent }
-\BKM@entry{id=6,dest={73656374696F6E2E32},srcline={152}}{5C3337365C3337375C303030465C3030306C5C303030795C303030625C303030615C303030635C3030306B5C3030305C3034305C303030435C3030306F5C3030306E5C303030765C303030655C303030725C303030745C303030655C30303072}
-\BKM@entry{id=7,dest={73756273656374696F6E2E322E31},srcline={153}}{5C3337365C3337375C303030495C303030645C303030655C303030615C3030306C5C3030305C3034305C303030435C303030615C3030306C5C303030635C303030755C3030306C5C303030615C303030745C303030695C3030306F5C3030306E5C30303073}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Flyback Converter}{7}{section.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Ideal Calculations}{7}{subsection.2.1}\protected@file@percent }
-\newlabel{tikzpicture:idealFlyback}{{2.1}{7}{Ideal Calculations}{subsection.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Ideal Flyback Converter}}{7}{figure.2}\protected@file@percent }
-\newlabel{equation:zerovoltseconds}{{10}{7}{Ideal Calculations}{equation.2.10}{}}
-\BKM@entry{id=8,dest={73756273656374696F6E2E322E32},srcline={229}}{5C3337365C3337375C303030495C303030645C303030655C303030615C3030306C5C3030305C3034305C303030535C303030695C3030306D5C303030755C3030306C5C303030615C303030745C303030695C3030306F5C3030306E5C30303073}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Ideal Simulations}{8}{subsection.2.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Ideal Flyback, Output Voltage $V_o$ = 10 V, ($V_d$ = 12 V, $D$ = 0.4545)}}{8}{figure.3}\protected@file@percent }
-\newlabel{fig:IdealSim12V}{{3}{8}{Ideal Flyback, Output Voltage $V_o$ = 10 V, ($V_d$ = 12 V, $D$ = 0.4545)}{figure.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Ideal Flyback, Output Power $P_o$ = 0.45 W, ($V_d$ = 12 V, $D$ = 0.4545)}}{8}{figure.4}\protected@file@percent }
-\newlabel{fig:PowerIdealSim12V}{{4}{8}{Ideal Flyback, Output Power $P_o$ = 0.45 W, ($V_d$ = 12 V, $D$ = 0.4545)}{figure.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Ideal Flyback, Output Ripple $\Delta V_o$ = 0.2 V, ($V_d$ = 12 V, $D$ = 0.4545)}}{9}{figure.5}\protected@file@percent }
-\newlabel{fig:RippleIdealSim12V}{{5}{9}{Ideal Flyback, Output Ripple $\Delta V_o$ = 0.2 V, ($V_d$ = 12 V, $D$ = 0.4545)}{figure.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Ideal Flyback, Output Voltage $V_o$ = 10 V, ($V_d$ = 5 V, $D$ = 0.6667)}}{9}{figure.6}\protected@file@percent }
-\newlabel{fig:IdealSim5V}{{6}{9}{Ideal Flyback, Output Voltage $V_o$ = 10 V, ($V_d$ = 5 V, $D$ = 0.6667)}{figure.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Ideal Flyback, Output Power $P_o$ = 0.45 W, ($V_d$ = 5 V, $D$ = 0.6667)}}{10}{figure.7}\protected@file@percent }
-\newlabel{fig:PowerIdealSim5V}{{7}{10}{Ideal Flyback, Output Power $P_o$ = 0.45 W, ($V_d$ = 5 V, $D$ = 0.6667)}{figure.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Ideal Flyback, Output Ripple $\Delta V_o$ = 0.3V, ($V_d$ = 5 V, $D$ = 0.6667)}}{10}{figure.8}\protected@file@percent }
-\newlabel{fig:RippleIdealSim5V}{{8}{10}{Ideal Flyback, Output Ripple $\Delta V_o$ = 0.3V, ($V_d$ = 5 V, $D$ = 0.6667)}{figure.8}{}}
-\BKM@entry{id=9,dest={73756273656374696F6E2E322E33},srcline={274}}{5C3337365C3337375C3030304E5C3030306F5C3030306E5C3030302D5C303030495C303030645C303030655C303030615C3030306C5C3030305C3034305C303030435C303030615C3030306C5C303030635C303030755C3030306C5C303030615C303030745C303030695C3030306F5C3030306E5C30303073}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Non-Ideal Calculations}{11}{subsection.2.3}\protected@file@percent }
-\newlabel{tikzpicture:nonidealFlyback}{{2.3}{11}{Non-Ideal Calculations}{subsection.2.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Non-Ideal Flyback Converter}}{11}{figure.9}\protected@file@percent }
-\newlabel{equation:Rp}{{17}{11}{Non-Ideal Calculations}{equation.2.17}{}}
-\BKM@entry{id=10,dest={73756273656374696F6E2E322E34},srcline={374}}{5C3337365C3337375C3030304E5C3030306F5C3030306E5C3030302D5C303030495C303030645C303030655C303030615C3030306C5C3030305C3034305C303030535C303030695C3030306D5C303030755C3030306C5C303030615C303030745C303030695C3030306F5C3030306E5C30303073}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Non-Ideal Simulations}{13}{subsection.2.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Non Ideal Flyback, Output Voltage $V_o$ = 9.746 V, ($V_d$ = 12 V, $D$ = 0.4753)}}{13}{figure.10}\protected@file@percent }
-\newlabel{fig:NonIdealSim12Vcal}{{10}{13}{Non Ideal Flyback, Output Voltage $V_o$ = 9.746 V, ($V_d$ = 12 V, $D$ = 0.4753)}{figure.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Non Ideal Flyback, Output Voltage $V_o$ = 10 V, ($V_d$ = 12 V, $D$ = 0.4815)}}{13}{figure.11}\protected@file@percent }
-\newlabel{fig:NonIdealSim12Vtested}{{11}{13}{Non Ideal Flyback, Output Voltage $V_o$ = 10 V, ($V_d$ = 12 V, $D$ = 0.4815)}{figure.11}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Non Ideal Flyback, Output Power $P_o$ = 0.432 W, ($V_d$ = 12 V, $D$ = 0.4753)}}{14}{figure.12}\protected@file@percent }
-\newlabel{fig:PowerNonIdealSim12V}{{12}{14}{Non Ideal Flyback, Output Power $P_o$ = 0.432 W, ($V_d$ = 12 V, $D$ = 0.4753)}{figure.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Non Ideal Flyback, Output Ripple $\Delta V_o$ = 210 mV, ($V_d$ = 12 V, $D$ = 0.4753)}}{14}{figure.13}\protected@file@percent }
-\newlabel{fig:RippleNonIdealSim12V}{{13}{14}{Non Ideal Flyback, Output Ripple $\Delta V_o$ = 210 mV, ($V_d$ = 12 V, $D$ = 0.4753)}{figure.13}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Non Ideal Flyback, Output Voltage $V_o$ = 9.21 V, ($V_d$ = 5 V, $D$ = 0.6866)}}{15}{figure.14}\protected@file@percent }
-\newlabel{fig:NonIdealSim5Vcal}{{14}{15}{Non Ideal Flyback, Output Voltage $V_o$ = 9.21 V, ($V_d$ = 5 V, $D$ = 0.6866)}{figure.14}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Non Ideal Flyback, Output Voltage $V_o$ = 10.02 V, ($V_d$ = 5 V, $D$ = 0.7055)}}{15}{figure.15}\protected@file@percent }
-\newlabel{fig:NonIdealSim5Vtested}{{15}{15}{Non Ideal Flyback, Output Voltage $V_o$ = 10.02 V, ($V_d$ = 5 V, $D$ = 0.7055)}{figure.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Non Ideal Flyback, Output Power $P_o$ = 0.385 W, ($V_d$ = 5 V, $D$ = 0.6667)}}{16}{figure.16}\protected@file@percent }
-\newlabel{fig:PowerNonIdealSim5V}{{16}{16}{Non Ideal Flyback, Output Power $P_o$ = 0.385 W, ($V_d$ = 5 V, $D$ = 0.6667)}{figure.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Non Ideal Flyback, Output Ripple $\Delta V_o$ = 290 mV, ($V_d$ = 5 V, $D$ = 0.6667)}}{16}{figure.17}\protected@file@percent }
-\newlabel{fig:RippleNonIdealSim5V}{{17}{16}{Non Ideal Flyback, Output Ripple $\Delta V_o$ = 290 mV, ($V_d$ = 5 V, $D$ = 0.6667)}{figure.17}{}}
-\BKM@entry{id=11,dest={73756273656374696F6E2E322E35},srcline={431}}{5C3337365C3337375C303030525C303030655C303030735C303030755C3030306C5C303030745C30303073}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Results}{17}{subsection.2.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Practical Flyback, Ripple $\Delta V_o$ = 344 mV, ($C$ = 1 $\mu $F, $V_d$ = 12 V, $D$ = 0.477)}}{17}{figure.18}\protected@file@percent }
-\newlabel{fig:Practical1}{{18}{17}{Practical Flyback, Ripple $\Delta V_o$ = 344 mV, ($C$ = 1 $\mu $F, $V_d$ = 12 V, $D$ = 0.477)}{figure.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Practical Flyback, Ripple $\Delta V_o$ = 128 mV, ($C$ = 2.68 $\mu $F, $V_d$ = 12 V, $D$ = 0.477)}}{17}{figure.19}\protected@file@percent }
-\newlabel{fig:Practical2}{{19}{17}{Practical Flyback, Ripple $\Delta V_o$ = 128 mV, ($C$ = 2.68 $\mu $F, $V_d$ = 12 V, $D$ = 0.477)}{figure.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Practical Flyback, Output Voltage $V_o$ = 8.32 V, ($C$ = 2.68 $\mu $F, $V_d$ = 5 V, $D$ = 0.688)}}{18}{figure.20}\protected@file@percent }
-\newlabel{fig:Practical3}{{20}{18}{Practical Flyback, Output Voltage $V_o$ = 8.32 V, ($C$ = 2.68 $\mu $F, $V_d$ = 5 V, $D$ = 0.688)}{figure.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Practical Flyback, Output Voltage $V_o$ = 10 V, ($C$ = 2.68 $\mu $F, $V_d$ = 5 V, $D$ = 0.734)}}{18}{figure.21}\protected@file@percent }
-\newlabel{fig:Practical4}{{21}{18}{Practical Flyback, Output Voltage $V_o$ = 10 V, ($C$ = 2.68 $\mu $F, $V_d$ = 5 V, $D$ = 0.734)}{figure.21}{}}
-\BKM@entry{id=12,dest={73756273656374696F6E2E322E36},srcline={461}}{5C3337365C3337375C303030435C3030306F5C3030306E5C303030635C3030306C5C303030755C303030735C303030695C3030306F5C3030306E}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Conclusion}{19}{subsection.2.6}\protected@file@percent }
+\newlabel{equation:buck_iPeak}{{8}{5}{Non Ideal Calculations}{equation.1.8}{}}
+\BKM@entry{id=5,dest={73756273656374696F6E2E312E34},srcline={169}}{5C3337365C3337375C3030304E5C3030306F5C3030306E5C3030305C3034305C303030495C303030645C303030655C303030615C3030306C5C3030305C3034305C303030535C303030695C3030306D5C303030755C3030306C5C303030615C303030745C303030695C3030306F5C3030306E5C30303073}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Non Ideal Simulations}{7}{subsection.1.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Modelica model used to simluate the operation of the non ideal Buck converter.}}{7}{figure.4}\protected@file@percent }
+\newlabel{fig:Buck_nonIdealModel}{{4}{7}{Modelica model used to simluate the operation of the non ideal Buck converter}{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Non-ideal Buck converter output voltage for duty cycle of 41.67\% and a load of $3.9$ $\Omega $. An average voltage of 3.2164 V is observed.}}{8}{figure.5}\protected@file@percent }
+\newlabel{fig:buck_NI_output_oldD}{{5}{8}{Non-ideal Buck converter output voltage for duty cycle of 41.67\% and a load of $3.9$ $\Omega $. An average voltage of 3.2164 V is observed}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Non-ideal Buck converter output voltage for duty cycle of 61.44\% and a load of $3.9$ $\Omega $. An average voltage of 5.0010 V and a ripple voltage of 27.739 mV is observed.}}{8}{figure.6}\protected@file@percent }
+\newlabel{fig:buck_NI_output_newD}{{6}{8}{Non-ideal Buck converter output voltage for duty cycle of 61.44\% and a load of $3.9$ $\Omega $. An average voltage of 5.0010 V and a ripple voltage of 27.739 mV is observed}{figure.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Inductor current for the non ideal Buck converter under rated power conditions.}}{9}{figure.7}\protected@file@percent }
+\newlabel{fig:buck_NIDCM}{{7}{9}{Inductor current for the non ideal Buck converter under rated power conditions}{figure.7}{}}
+\BKM@entry{id=6,dest={73756273656374696F6E2E312E35},srcline={211}}{5C3337365C3337375C303030525C303030655C303030735C303030755C3030306C5C303030745C30303073}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5}Results}{10}{subsection.1.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Constructed Buck converter.}}{10}{figure.8}\protected@file@percent }
+\newlabel{fig:buck_real}{{8}{10}{Constructed Buck converter}{figure.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Output voltage of the Buck converter (blue) for a duty cycle of 62\%. The yellow waveform is the input PWM signal to the gate driver. An RMS voltage of 5.081 V is observed.}}{11}{figure.9}\protected@file@percent }
+\newlabel{fig:buck_expV_newD}{{9}{11}{Output voltage of the Buck converter (blue) for a duty cycle of 62\%. The yellow waveform is the input PWM signal to the gate driver. An RMS voltage of 5.081 V is observed}{figure.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Output voltage of the Buck converter in steady state. A ripple voltage of 120 mV is observed.}}{11}{figure.10}\protected@file@percent }
+\newlabel{fig:buck_expV_ripple}{{10}{11}{Output voltage of the Buck converter in steady state. A ripple voltage of 120 mV is observed}{figure.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Output current of the Buck converter under rated power conditions.}}{12}{figure.11}\protected@file@percent }
+\newlabel{fig:buck_expI}{{11}{12}{Output current of the Buck converter under rated power conditions}{figure.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Output current of the Buck converter under rated power conditions.}}{13}{figure.12}\protected@file@percent }
+\newlabel{fig:buck_expI_DCM}{{12}{13}{Output current of the Buck converter under rated power conditions}{figure.12}{}}
+\BKM@entry{id=7,dest={73656374696F6E2E32},srcline={256}}{5C3337365C3337375C303030465C3030306C5C303030795C303030625C303030615C303030635C3030306B5C3030305C3034305C303030435C3030306F5C3030306E5C303030765C303030655C303030725C303030745C303030655C30303072}
+\BKM@entry{id=8,dest={73756273656374696F6E2E322E31},srcline={257}}{5C3337365C3337375C303030495C303030645C303030655C303030615C3030306C5C3030305C3034305C303030435C303030615C3030306C5C303030635C303030755C3030306C5C303030615C303030745C303030695C3030306F5C3030306E5C30303073}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Flyback Converter}{14}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Ideal Calculations}{14}{subsection.2.1}\protected@file@percent }
+\newlabel{tikzpicture:idealFlyback}{{2.1}{14}{Ideal Calculations}{subsection.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Ideal Flyback Converter}}{14}{figure.13}\protected@file@percent }
+\newlabel{equation:zerovoltseconds}{{11}{14}{Ideal Calculations}{equation.2.11}{}}
+\newlabel{equation:voltageRipple}{{17}{15}{Ideal Calculations}{equation.2.17}{}}
+\newlabel{equation:capacitance}{{18}{15}{Ideal Calculations}{equation.2.18}{}}
+\BKM@entry{id=9,dest={73756273656374696F6E2E322E32},srcline={354}}{5C3337365C3337375C303030495C303030645C303030655C303030615C3030306C5C3030305C3034305C303030535C303030695C3030306D5C303030755C3030306C5C303030615C303030745C303030695C3030306F5C3030306E5C30303073}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Ideal Simulations}{16}{subsection.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Ideal Flyback, Output Voltage $V_o$ = 10 V, ($V_d$ = 12 V, $D$ = 0.4545)}}{16}{figure.14}\protected@file@percent }
+\newlabel{fig:IdealSim12V}{{14}{16}{Ideal Flyback, Output Voltage $V_o$ = 10 V, ($V_d$ = 12 V, $D$ = 0.4545)}{figure.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Ideal Flyback, Output Power $P_o$ = 0.5 W, ($V_d$ = 12 V, $D$ = 0.4545)}}{16}{figure.15}\protected@file@percent }
+\newlabel{fig:PowerIdealSim12V}{{15}{16}{Ideal Flyback, Output Power $P_o$ = 0.5 W, ($V_d$ = 12 V, $D$ = 0.4545)}{figure.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Ideal Flyback, Output Ripple $\Delta V_o$ = 200 mV, ($C$ = 1 $\mu $F, $V_d$ = 12 V, $D$ = 0.4545)}}{17}{figure.16}\protected@file@percent }
+\newlabel{fig:RippleIdealSim12V}{{16}{17}{Ideal Flyback, Output Ripple $\Delta V_o$ = 200 mV, ($C$ = 1 $\mu $F, $V_d$ = 12 V, $D$ = 0.4545)}{figure.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Ideal Flyback, Output Voltage $V_o$ = 10 V, ($V_d$ = 5 V, $D$ = 0.6667)}}{17}{figure.17}\protected@file@percent }
+\newlabel{fig:IdealSim5V}{{17}{17}{Ideal Flyback, Output Voltage $V_o$ = 10 V, ($V_d$ = 5 V, $D$ = 0.6667)}{figure.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Ideal Flyback, Output Power $P_o$ = 0.5 W, ($V_d$ = 5 V, $D$ = 0.6667)}}{18}{figure.18}\protected@file@percent }
+\newlabel{fig:PowerIdealSim5V}{{18}{18}{Ideal Flyback, Output Power $P_o$ = 0.5 W, ($V_d$ = 5 V, $D$ = 0.6667)}{figure.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Ideal Flyback, Output Ripple $\Delta V_o$ = 300 mV, ($C$ = 1 $\mu $F, $V_d$ = 5 V, $D$ = 0.6667)}}{18}{figure.19}\protected@file@percent }
+\newlabel{fig:RippleIdealSim5V}{{19}{18}{Ideal Flyback, Output Ripple $\Delta V_o$ = 300 mV, ($C$ = 1 $\mu $F, $V_d$ = 5 V, $D$ = 0.6667)}{figure.19}{}}
+\BKM@entry{id=10,dest={73756273656374696F6E2E322E33},srcline={399}}{5C3337365C3337375C3030304E5C3030306F5C3030306E5C3030302D5C303030495C303030645C303030655C303030615C3030306C5C3030305C3034305C303030435C303030615C3030306C5C303030635C303030755C3030306C5C303030615C303030745C303030695C3030306F5C3030306E5C30303073}
+\citation{RN2}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Non-Ideal Calculations}{19}{subsection.2.3}\protected@file@percent }
+\newlabel{tikzpicture:nonidealFlyback}{{2.3}{19}{Non-Ideal Calculations}{subsection.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Non-Ideal Flyback Converter}}{19}{figure.20}\protected@file@percent }
+\newlabel{equation:ohm}{{20}{19}{Non-Ideal Calculations}{equation.2.20}{}}
+\newlabel{equation:Rp}{{21}{19}{Non-Ideal Calculations}{equation.2.21}{}}
+\BKM@entry{id=11,dest={73756273656374696F6E2E322E34},srcline={500}}{5C3337365C3337375C3030304E5C3030306F5C3030306E5C3030302D5C303030495C303030645C303030655C303030615C3030306C5C3030305C3034305C303030535C303030695C3030306D5C303030755C3030306C5C303030615C303030745C303030695C3030306F5C3030306E5C30303073}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Non-Ideal Simulations}{21}{subsection.2.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Non Ideal Flyback, Output Voltage $V_o$ = 9.746 V, ($V_d$ = 12 V, $D$ = 0.4753)}}{21}{figure.21}\protected@file@percent }
+\newlabel{fig:NonIdealSim12Vcal}{{21}{21}{Non Ideal Flyback, Output Voltage $V_o$ = 9.746 V, ($V_d$ = 12 V, $D$ = 0.4753)}{figure.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Non Ideal Flyback, Output Voltage $V_o$ = 10 V, ($V_d$ = 12 V, $D$ = 0.4815)}}{21}{figure.22}\protected@file@percent }
+\newlabel{fig:NonIdealSim12Vtested}{{22}{21}{Non Ideal Flyback, Output Voltage $V_o$ = 10 V, ($V_d$ = 12 V, $D$ = 0.4815)}{figure.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Non Ideal Flyback, Output Power $P_o$ = 0.432 W, ($V_d$ = 12 V, $D$ = 0.4753)}}{22}{figure.23}\protected@file@percent }
+\newlabel{fig:PowerNonIdealSim12V}{{23}{22}{Non Ideal Flyback, Output Power $P_o$ = 0.432 W, ($V_d$ = 12 V, $D$ = 0.4753)}{figure.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Non Ideal Flyback, Output Ripple $\Delta V_o$ = 210 mV, ($V_d$ = 12 V, $D$ = 0.4753)}}{22}{figure.24}\protected@file@percent }
+\newlabel{fig:RippleNonIdealSim12V}{{24}{22}{Non Ideal Flyback, Output Ripple $\Delta V_o$ = 210 mV, ($V_d$ = 12 V, $D$ = 0.4753)}{figure.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Non Ideal Flyback, Output Voltage $V_o$ = 9.21 V, ($V_d$ = 5 V, $D$ = 0.6866)}}{23}{figure.25}\protected@file@percent }
+\newlabel{fig:NonIdealSim5Vcal}{{25}{23}{Non Ideal Flyback, Output Voltage $V_o$ = 9.21 V, ($V_d$ = 5 V, $D$ = 0.6866)}{figure.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Non Ideal Flyback, Output Voltage $V_o$ = 10.02 V, ($V_d$ = 5 V, $D$ = 0.7055)}}{23}{figure.26}\protected@file@percent }
+\newlabel{fig:NonIdealSim5Vtested}{{26}{23}{Non Ideal Flyback, Output Voltage $V_o$ = 10.02 V, ($V_d$ = 5 V, $D$ = 0.7055)}{figure.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Non Ideal Flyback, Output Power $P_o$ = 0.385 W, ($V_d$ = 5 V, $D$ = 0.6667)}}{24}{figure.27}\protected@file@percent }
+\newlabel{fig:PowerNonIdealSim5V}{{27}{24}{Non Ideal Flyback, Output Power $P_o$ = 0.385 W, ($V_d$ = 5 V, $D$ = 0.6667)}{figure.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces Non Ideal Flyback, Output Ripple $\Delta V_o$ = 290 mV, ($V_d$ = 5 V, $D$ = 0.6667)}}{24}{figure.28}\protected@file@percent }
+\newlabel{fig:RippleNonIdealSim5V}{{28}{24}{Non Ideal Flyback, Output Ripple $\Delta V_o$ = 290 mV, ($V_d$ = 5 V, $D$ = 0.6667)}{figure.28}{}}
+\BKM@entry{id=12,dest={73756273656374696F6E2E322E35},srcline={559}}{5C3337365C3337375C303030525C303030655C303030735C303030755C3030306C5C303030745C30303073}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Results}{25}{subsection.2.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Practical Flyback, $C$ = 2.68 $\mu $F}}{25}{figure.29}\protected@file@percent }
+\newlabel{fig:Practical}{{29}{25}{Practical Flyback, $C$ = 2.68 $\mu $F}{figure.29}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Comparison of Duty Cycles ($D$) required to produce $V_o$ = 10 V}}{25}{table.1}\protected@file@percent }
+\newlabel{tab:duty_cycle}{{1}{25}{Comparison of Duty Cycles ($D$) required to produce $V_o$ = 10 V}{table.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Practical Flyback, Ripple $\Delta V_o$ = 344 mV, ($C$ = 1 $\mu $F, $V_d$ = 12 V, $D$ = 0.477)}}{26}{figure.30}\protected@file@percent }
+\newlabel{fig:Practical1}{{30}{26}{Practical Flyback, Ripple $\Delta V_o$ = 344 mV, ($C$ = 1 $\mu $F, $V_d$ = 12 V, $D$ = 0.477)}{figure.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Practical Flyback, Ripple $\Delta V_o$ = 128 mV, ($C$ = 2.68 $\mu $F, $V_d$ = 12 V, $D$ = 0.477)}}{26}{figure.31}\protected@file@percent }
+\newlabel{fig:Practical2}{{31}{26}{Practical Flyback, Ripple $\Delta V_o$ = 128 mV, ($C$ = 2.68 $\mu $F, $V_d$ = 12 V, $D$ = 0.477)}{figure.31}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces Practical Flyback, Output Voltage $V_o$ = 8.32 V, ($C$ = 2.68 $\mu $F, $V_d$ = 5 V, $D$ = 0.688)}}{27}{figure.32}\protected@file@percent }
+\newlabel{fig:Practical3}{{32}{27}{Practical Flyback, Output Voltage $V_o$ = 8.32 V, ($C$ = 2.68 $\mu $F, $V_d$ = 5 V, $D$ = 0.688)}{figure.32}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces Practical Flyback, Output Voltage $V_o$ = 10 V, ($C$ = 2.68 $\mu $F, $V_d$ = 5 V, $D$ = 0.734)}}{27}{figure.33}\protected@file@percent }
+\newlabel{fig:Practical4}{{33}{27}{Practical Flyback, Output Voltage $V_o$ = 10 V, ($C$ = 2.68 $\mu $F, $V_d$ = 5 V, $D$ = 0.734)}{figure.33}{}}
+\BKM@entry{id=13,dest={73756273656374696F6E2E322E36},srcline={617}}{5C3337365C3337375C303030435C3030306F5C3030306E5C303030635C3030306C5C303030755C303030735C303030695C3030306F5C3030306E}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Conclusion}{28}{subsection.2.6}\protected@file@percent }
+\newlabel{equation:discreteInductor}{{30}{28}{Conclusion}{equation.2.30}{}}
 \bibstyle{IEEEtranN}
 \bibdata{references}
-\gdef \@abspage@last{20}
+\bibcite{RN1}{{1}{}{{RN1}}{{}}}
+\bibcite{RN3}{{2}{}{{RN3}}{{}}}
+\bibcite{RN4}{{3}{}{{RN4}}{{}}}
+\bibcite{RN2}{{4}{}{{RN2}}{{}}}
+\gdef \@abspage@last{30}

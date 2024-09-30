@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.4)  30 SEP 2024 13:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.4)  30 SEP 2024 23:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -711,107 +711,164 @@ Package pdftex.def Info: LOGO_Square.pdf  used on input line 48.
 
 {C:/Users/pdidd/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./LOGO_Square.pdf>]
 
-Package natbib Warning: Citation `RNX0' on page 2 undefined on input line 86.
-
-
-Package natbib Warning: Citation `RNX1' on page 2 undefined on input line 86.
-
-
-Package natbib Warning: Citation `RNX2' on page 2 undefined on input line 86.
-
-
-
 [2]
+<figures/Buck_idealModel.png, id=46, 737.00343pt x 359.84438pt>
+File: figures/Buck_idealModel.png Graphic file (type png)
+<use figures/Buck_idealModel.png>
+Package pdftex.def Info: figures/Buck_idealModel.png  used on input line 100.
+(pdftex.def)             Requested size: 338.58632pt x 165.31078pt.
+<figures/Buck_idealVout.png, id=48, 963.6pt x 542.025pt>
+File: figures/Buck_idealVout.png Graphic file (type png)
+<use figures/Buck_idealVout.png>
+Package pdftex.def Info: figures/Buck_idealVout.png  used on input line 107.
+(pdftex.def)             Requested size: 290.22107pt x 163.24559pt.
 
-LaTeX Warning: Reference `fig:Buck_idealModel' on page 3 undefined on input line 94.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Warning: Reference `fig:Buck_idealVout' on page 3 undefined on input line 94.
-
-
-LaTeX Warning: Reference `fig:Buck_idealRipple' on page 3 undefined on input line 94.
-
-<figures/buck_DCM.png, id=39, 404.26031pt x 453.94594pt>
+<figures/buck_DCM.png, id=49, 404.26031pt x 453.94594pt>
 File: figures/buck_DCM.png Graphic file (type png)
 <use figures/buck_DCM.png>
-Package pdftex.def Info: figures/buck_DCM.png  used on input line 100.
+Package pdftex.def Info: figures/buck_DCM.png  used on input line 114.
 (pdftex.def)             Requested size: 290.22107pt x 325.89188pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[3 <./figures/Buck_idealModel.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[4 <./figures/Buck_idealVout.png (PNG copy)> <./figures/buck_DCM.png>]
+
+[5]
+
+[6]
+<figures/Buck_nonIdealModel.png, id=90, 842.39719pt x 374.90062pt>
+File: figures/Buck_nonIdealModel.png Graphic file (type png)
+<use figures/Buck_nonIdealModel.png>
+Package pdftex.def Info: figures/Buck_nonIdealModel.png  used on input line 175.
+(pdftex.def)             Requested size: 338.58632pt x 150.6841pt.
+<figures/buck_NI_output_oldD.png, id=91, 963.6pt x 542.025pt>
+File: figures/buck_NI_output_oldD.png Graphic file (type png)
+<use figures/buck_NI_output_oldD.png>
+Package pdftex.def Info: figures/buck_NI_output_oldD.png  used on input line 182.
+(pdftex.def)             Requested size: 290.22107pt x 163.24559pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/buck_NI_output_newD.png, id=92, 963.6pt x 542.025pt>
+File: figures/buck_NI_output_newD.png Graphic file (type png)
+<use figures/buck_NI_output_newD.png>
+Package pdftex.def Info: figures/buck_NI_output_newD.png  used on input line 188.
+(pdftex.def)             Requested size: 290.22107pt x 163.24559pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-
-[3]
-
-LaTeX Warning: Reference `fig:Buck_nonIdealCircuits' on page 4 undefined on input line 107.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[4 <./figures/buck_DCM.png>]
+[7 <./figures/Buck_nonIdealModel.png>]
 
-Package natbib Warning: Citation `RNX1' on page 5 undefined on input line 128.
-
-
-Package natbib Warning: Citation `RNX0' on page 5 undefined on input line 128.
-
-
-Package natbib Warning: Citation `RNX2' on page 5 undefined on input line 128.
+LaTeX Warning: Reference `fig:buck_Current' on page 8 undefined on input line 194.
 
 
 
-[5]
+[8 <./figures/buck_NI_output_oldD.png (PNG copy)> <./figures/buck_NI_output_newD.png (PNG copy)>]
+<figures/buck_NIDCM.png, id=111, 438.13687pt x 490.83376pt>
+File: figures/buck_NIDCM.png Graphic file (type png)
+<use figures/buck_NIDCM.png>
+Package pdftex.def Info: figures/buck_NIDCM.png  used on input line 206.
+(pdftex.def)             Requested size: 290.22107pt x 325.13461pt.
 
-LaTeX Warning: Reference `fig:buck_NI_output_oldD' on page 6 undefined on input line 134.
+
+[9 <./figures/buck_NIDCM.png>]
+<figures/buck_real.jpg, id=118, 3679.7475pt x 1451.4225pt>
+File: figures/buck_real.jpg Graphic file (type jpg)
+<use figures/buck_real.jpg>
+Package pdftex.def Info: figures/buck_real.jpg  used on input line 216.
+(pdftex.def)             Requested size: 338.58632pt x 133.54578pt.
 
 
-LaTeX Warning: Reference `fig: buck_NI_output_newD' on page 6 undefined on input line 134.
+[10 <./figures/buck_real.jpg>]
+<figures/buck_expV_newD.png, id=129, 1445.4pt x 813.0375pt>
+File: figures/buck_expV_newD.png Graphic file (type png)
+<use figures/buck_expV_newD.png>
+Package pdftex.def Info: figures/buck_expV_newD.png  used on input line 227.
+(pdftex.def)             Requested size: 338.58632pt x 190.45595pt.
+<figures/buck_expV_ripple.png, id=130, 391.353pt x 248.565pt>
+File: figures/buck_expV_ripple.png Graphic file (type png)
+<use figures/buck_expV_ripple.png>
+Package pdftex.def Info: figures/buck_expV_ripple.png  used on input line 233.
+(pdftex.def)             Requested size: 338.58632pt x 215.05505pt.
 
 
+[11 <./figures/buck_expV_newD.png (PNG copy)> <./figures/buck_expV_ripple.png>]
+<figures/buck_expI.png, id=141, 803.0pt x 481.8pt>
+File: figures/buck_expI.png Graphic file (type png)
+<use figures/buck_expI.png>
+Package pdftex.def Info: figures/buck_expI.png  used on input line 244.
+(pdftex.def)             Requested size: 338.58632pt x 203.15594pt.
+<figures/buck_expI_DCM.png, id=142, 378.66469pt x 403.5075pt>
+File: figures/buck_expI_DCM.png Graphic file (type png)
+<use figures/buck_expI_DCM.png>
+Package pdftex.def Info: figures/buck_expI_DCM.png  used on input line 251.
+(pdftex.def)             Requested size: 338.58632pt x 360.8014pt.
 
-[6]
+
+[12 <./figures/buck_expI.png (PNG copy)>]
+
+[13 <./figures/buck_expI_DCM.png>]
 \absvshift=\dimen296
 \absvshift=\dimen297
 \absvshift=\dimen298
 \absvshift=\dimen299
 
 
-[7]
-<figures/IdealSim12V.png, id=85, 453.19313pt x 254.9525pt>
+[14]
+
+[15]
+<figures/IdealSim12V.png, id=177, 453.19313pt x 254.9525pt>
 File: figures/IdealSim12V.png Graphic file (type png)
 <use figures/IdealSim12V.png>
-Package pdftex.def Info: figures/IdealSim12V.png  used on input line 232.
+Package pdftex.def Info: figures/IdealSim12V.png  used on input line 357.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
-<figures/PowerIdealSim12V.png, id=86, 453.19313pt x 254.9525pt>
+<figures/PowerIdealSim12V.png, id=178, 453.19313pt x 254.9525pt>
 File: figures/PowerIdealSim12V.png Graphic file (type png)
 <use figures/PowerIdealSim12V.png>
-Package pdftex.def Info: figures/PowerIdealSim12V.png  used on input line 239.
+Package pdftex.def Info: figures/PowerIdealSim12V.png  used on input line 364.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
-<figures/RippleIdealSim12V.png, id=87, 453.19313pt x 254.9525pt>
+<figures/RippleIdealSim12V.png, id=179, 453.19313pt x 254.9525pt>
 File: figures/RippleIdealSim12V.png Graphic file (type png)
 <use figures/RippleIdealSim12V.png>
-Package pdftex.def Info: figures/RippleIdealSim12V.png  used on input line 246.
+Package pdftex.def Info: figures/RippleIdealSim12V.png  used on input line 371.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
-<figures/IdealSim5V.png, id=88, 453.19313pt x 254.9525pt>
+<figures/IdealSim5V.png, id=180, 453.19313pt x 254.9525pt>
 File: figures/IdealSim5V.png Graphic file (type png)
 <use figures/IdealSim5V.png>
-Package pdftex.def Info: figures/IdealSim5V.png  used on input line 253.
+Package pdftex.def Info: figures/IdealSim5V.png  used on input line 378.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
 File: figures/PowerIdealSim12V.png Graphic file (type png)
 <use figures/PowerIdealSim12V.png>
-Package pdftex.def Info: figures/PowerIdealSim12V.png  used on input line 260.
+Package pdftex.def Info: figures/PowerIdealSim12V.png  used on input line 385.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
-<figures/RippleIdealSim5V.png, id=89, 453.19313pt x 254.9525pt>
+<figures/RippleIdealSim5V.png, id=181, 453.19313pt x 254.9525pt>
 File: figures/RippleIdealSim5V.png Graphic file (type png)
 <use figures/RippleIdealSim5V.png>
-Package pdftex.def Info: figures/RippleIdealSim5V.png  used on input line 267.
+Package pdftex.def Info: figures/RippleIdealSim5V.png  used on input line 392.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
 
 
-[8 <./figures/IdealSim12V.png> <./figures/PowerIdealSim12V.png>]
+[16 <./figures/IdealSim12V.png> <./figures/PowerIdealSim12V.png>]
 
-[9 <./figures/RippleIdealSim12V.png> <./figures/IdealSim5V.png>]
+[17 <./figures/RippleIdealSim12V.png> <./figures/IdealSim5V.png>]
 
-[10 <./figures/RippleIdealSim5V.png>]
+[18 <./figures/RippleIdealSim5V.png>]
 \absvshift=\dimen300
 \absvshift=\dimen301
 \absvshift=\dimen302
@@ -819,94 +876,111 @@ Package pdftex.def Info: figures/RippleIdealSim5V.png  used on input line 267.
 \absvshift=\dimen304
 
 
-[11]
+[19]
 
-[12]
-<figures/NonIdealSim12V(calculated).png, id=137, 453.19313pt x 254.9525pt>
+[20]
+<figures/NonIdealSim12V(calculated).png, id=234, 453.19313pt x 254.9525pt>
 File: figures/NonIdealSim12V(calculated).png Graphic file (type png)
 <use figures/NonIdealSim12V(calculated).png>
-Package pdftex.def Info: figures/NonIdealSim12V(calculated).png  used on input line 377.
+Package pdftex.def Info: figures/NonIdealSim12V(calculated).png  used on input line 504.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
-<figures/NonIdealSim12V(tested).png, id=138, 453.19313pt x 254.9525pt>
+<figures/NonIdealSim12V(tested).png, id=235, 453.19313pt x 254.9525pt>
 File: figures/NonIdealSim12V(tested).png Graphic file (type png)
 <use figures/NonIdealSim12V(tested).png>
-Package pdftex.def Info: figures/NonIdealSim12V(tested).png  used on input line 384.
+Package pdftex.def Info: figures/NonIdealSim12V(tested).png  used on input line 511.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
-<figures/PowerNonIdealSim12V.png, id=139, 453.19313pt x 254.9525pt>
+<figures/PowerNonIdealSim12V.png, id=236, 453.19313pt x 254.9525pt>
 File: figures/PowerNonIdealSim12V.png Graphic file (type png)
 <use figures/PowerNonIdealSim12V.png>
-Package pdftex.def Info: figures/PowerNonIdealSim12V.png  used on input line 391.
+Package pdftex.def Info: figures/PowerNonIdealSim12V.png  used on input line 518.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
-<figures/RippleNonIdealSim12V.png, id=140, 453.19313pt x 254.9525pt>
+<figures/RippleNonIdealSim12V.png, id=237, 453.19313pt x 254.9525pt>
 File: figures/RippleNonIdealSim12V.png Graphic file (type png)
 <use figures/RippleNonIdealSim12V.png>
-Package pdftex.def Info: figures/RippleNonIdealSim12V.png  used on input line 398.
+Package pdftex.def Info: figures/RippleNonIdealSim12V.png  used on input line 525.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
-<figures/NonIdealSim5V(calculated).png, id=141, 453.19313pt x 254.9525pt>
+<figures/NonIdealSim5V(calculated).png, id=238, 453.19313pt x 254.9525pt>
 File: figures/NonIdealSim5V(calculated).png Graphic file (type png)
 <use figures/NonIdealSim5V(calculated).png>
-Package pdftex.def Info: figures/NonIdealSim5V(calculated).png  used on input line 405.
+Package pdftex.def Info: figures/NonIdealSim5V(calculated).png  used on input line 532.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
-<figures/NonIdealSim5V(tested).png, id=142, 453.19313pt x 254.9525pt>
+<figures/NonIdealSim5V(tested).png, id=239, 453.19313pt x 254.9525pt>
 File: figures/NonIdealSim5V(tested).png Graphic file (type png)
 <use figures/NonIdealSim5V(tested).png>
-Package pdftex.def Info: figures/NonIdealSim5V(tested).png  used on input line 412.
+Package pdftex.def Info: figures/NonIdealSim5V(tested).png  used on input line 539.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
 File: figures/PowerNonIdealSim12V.png Graphic file (type png)
 <use figures/PowerNonIdealSim12V.png>
-Package pdftex.def Info: figures/PowerNonIdealSim12V.png  used on input line 419.
+Package pdftex.def Info: figures/PowerNonIdealSim12V.png  used on input line 546.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
-<figures/RippleNonIdealSim5V.png, id=143, 453.19313pt x 254.9525pt>
+<figures/RippleNonIdealSim5V.png, id=240, 453.19313pt x 254.9525pt>
 File: figures/RippleNonIdealSim5V.png Graphic file (type png)
 <use figures/RippleNonIdealSim5V.png>
-Package pdftex.def Info: figures/RippleNonIdealSim5V.png  used on input line 426.
+Package pdftex.def Info: figures/RippleNonIdealSim5V.png  used on input line 553.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
 
 
-[13 <./figures/NonIdealSim12V(calculated).png> <./figures/NonIdealSim12V(tested).png>]
+[21 <./figures/NonIdealSim12V(calculated).png> <./figures/NonIdealSim12V(tested).png>]
 
-[14 <./figures/PowerNonIdealSim12V.png> <./figures/RippleNonIdealSim12V.png>]
+[22 <./figures/PowerNonIdealSim12V.png> <./figures/RippleNonIdealSim12V.png>]
 
-[15 <./figures/NonIdealSim5V(calculated).png> <./figures/NonIdealSim5V(tested).png>]
+[23 <./figures/NonIdealSim5V(calculated).png> <./figures/NonIdealSim5V(tested).png>]
 
-[16 <./figures/RippleNonIdealSim5V.png>]
-<figures/Flyback/tek0001.png, id=177, 803.0pt x 481.8pt>
+[24 <./figures/RippleNonIdealSim5V.png>]
+<figures/Flyback_Built.jpg, id=273, 4047.12pt x 3035.34pt>
+File: figures/Flyback_Built.jpg Graphic file (type jpg)
+<use figures/Flyback_Built.jpg>
+Package pdftex.def Info: figures/Flyback_Built.jpg  used on input line 563.
+(pdftex.def)             Requested size: 338.58632pt x 253.90157pt.
+
+
+[25 <./figures/Flyback_Built.jpg>]
+<figures/Flyback/tek0001.png, id=282, 803.0pt x 481.8pt>
 File: figures/Flyback/tek0001.png Graphic file (type png)
 <use figures/Flyback/tek0001.png>
-Package pdftex.def Info: figures/Flyback/tek0001.png  used on input line 435.
+Package pdftex.def Info: figures/Flyback/tek0001.png  used on input line 590.
 (pdftex.def)             Requested size: 338.58632pt x 203.15594pt.
-<figures/Flyback/tek0002.png, id=178, 803.0pt x 481.8pt>
+<figures/Flyback/tek0002.png, id=283, 803.0pt x 481.8pt>
 File: figures/Flyback/tek0002.png Graphic file (type png)
 <use figures/Flyback/tek0002.png>
-Package pdftex.def Info: figures/Flyback/tek0002.png  used on input line 442.
+Package pdftex.def Info: figures/Flyback/tek0002.png  used on input line 597.
 (pdftex.def)             Requested size: 338.58632pt x 203.15594pt.
-<figures/Flyback/tek0003.png, id=179, 803.0pt x 481.8pt>
+<figures/Flyback/tek0003.png, id=284, 803.0pt x 481.8pt>
 File: figures/Flyback/tek0003.png Graphic file (type png)
 <use figures/Flyback/tek0003.png>
-Package pdftex.def Info: figures/Flyback/tek0003.png  used on input line 449.
+Package pdftex.def Info: figures/Flyback/tek0003.png  used on input line 604.
 (pdftex.def)             Requested size: 338.58632pt x 203.15594pt.
-<figures/Flyback/tek0004.png, id=180, 803.0pt x 481.8pt>
+<figures/Flyback/tek0004.png, id=285, 803.0pt x 481.8pt>
 File: figures/Flyback/tek0004.png Graphic file (type png)
 <use figures/Flyback/tek0004.png>
-Package pdftex.def Info: figures/Flyback/tek0004.png  used on input line 456.
+Package pdftex.def Info: figures/Flyback/tek0004.png  used on input line 611.
 (pdftex.def)             Requested size: 338.58632pt x 203.15594pt.
 
 
-[17 <./figures/Flyback/tek0001.png (PNG copy)> <./figures/Flyback/tek0002.png (PNG copy)>]
+[26 <./figures/Flyback/tek0001.png (PNG copy)> <./figures/Flyback/tek0002.png (PNG copy)>]
 
-[18 <./figures/Flyback/tek0003.png (PNG copy)> <./figures/Flyback/tek0004.png (PNG copy)>]
+[27 <./figures/Flyback/tek0003.png (PNG copy)> <./figures/Flyback/tek0004.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 618--645
 
-[19] (main.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 25.
-
-)
-
-Package natbib Warning: There were undefined citations.
+ []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 618--645
 
-[20] (main.aux)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 618--645
+
+ []
+
+
+
+[28]
+
+[29] (main.bbl)
+
+[30] (main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-16>
@@ -919,17 +993,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 42622 strings out of 473898
- 1026120 string characters out of 5726480
+ 42834 strings out of 473898
+ 1031139 string characters out of 5726480
  1960960 words of memory out of 5000000
- 65001 multiletter control sequences out of 15000+600000
- 564934 words of font info for 60 fonts, out of 8000000 for 9000
+ 65176 multiletter control sequences out of 15000+600000
+ 565281 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,12n,107p,11015b,1145s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (20 pages, 1149870 bytes).
+ 108i,12n,107p,11015b,1143s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (30 pages, 6158469 bytes).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
- 79 named destinations out of 1000 (max. 500000)
- 199 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 464 PDF objects out of 1000 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
+ 267 words of extra memory for PDF output out of 10000 (max. 10000000)
 
