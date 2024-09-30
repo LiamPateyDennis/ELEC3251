@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1727702552.6898 "main.aux" "main.bbl" "main" 1727702559.18176 0
+["bibtex main"] 1727702552.6898 "main.aux" "main.bbl" "main" 1727702657.02953 0
   "./references.bib" 1727600086 913 ae5ee00fbae19a28039ec45459210ff3 ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/bibtex/bst/feupphdteses/IEEEtranN.bst" 1363099170 63465 52e4631827d9e4cab8ed25dc93fa95dd ""
-  "main.aux" 1727702558 19025 2bb8355d4bc0e7afbaff708406bf2713 "pdflatex"
+  "main.aux" 1727702656 19025 2bb8355d4bc0e7afbaff708406bf2713 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1727702553.15005 "d:/github/elec3251/ass1/main.tex" "main.pdf" "main" 1727702559.18314 0
+["pdflatex"] 1727702650.95192 "d:/github/elec3251/ass1/main.tex" "main.pdf" "main" 1727702657.03094 0
   "C:/Users/pdidd/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1727096059 215609 685af41ea3cd3ac45395c8bb53311c2c ""
   "C:/Users/pdidd/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725413735 24265373 3e99e7ce72e55dd05cb41d43ccf292ad ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233948248 1004 54797486969f23fa377b128694d548df ""
@@ -188,7 +188,7 @@
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388486852 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700123922 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "LOGO_Square.pdf" 1725544936 5246 456bc821bf474e4f9917d9367f99661f ""
-  "d:/github/elec3251/ass1/main.tex" 1727702545 40265 31e1c34c18738dabf779e2eb18ff16c6 ""
+  "d:/github/elec3251/ass1/main.tex" 1727702650 40258 6d2549cef1daca07f468eb627110ca22 ""
   "figures/Buck_idealModel.png" 1727510944 73888 9e562dc2b0f971b6cffeb17f9b1f8273 ""
   "figures/Buck_idealVout.png" 1727510944 62590 7977cf7601f1016a28b672dd7807d683 ""
   "figures/Buck_nonIdealModel.png" 1727510944 87201 5d245b63ff2fb00372ac6ebbe4d34119 ""
@@ -211,6 +211,7 @@
   "figures/RippleIdealSim5V.png" 1727612961 132023 25928f957b05cdda0d4da1208190e36f ""
   "figures/RippleNonIdealSim12V.png" 1727655146 110944 18e85df275e3ac896a017f648b7126d3 ""
   "figures/RippleNonIdealSim5V.png" 1727658650 86768 06d8ad1fe0466c5c5c99db37e4f5a928 ""
+  "figures/buck_Current.png" 1727702604 60052 77e51c06aa6d685b3481afc24377dd04 ""
   "figures/buck_DCM.png" 1727095308 159131 bf575084671cecb2f888240676b83bb6 ""
   "figures/buck_NIDCM.png" 1727510944 209876 e7ca0978b68ae2bacf356cd728c9ddd5 ""
   "figures/buck_NI_output_newD.png" 1727510944 58113 7896877bf407cf411298102d0a011e41 ""
@@ -220,10 +221,10 @@
   "figures/buck_expV_newD.png" 1727510944 126585 ca99afe80981631446154628ae21af65 ""
   "figures/buck_expV_ripple.png" 1727510944 29673 3a402127e9be191d8e22feb5425f5151 ""
   "figures/buck_real.jpg" 1727510944 976454 8a2a2607d8f885ca50769a1c3f0d6fb0 ""
-  "main.aux" 1727702558 19025 2bb8355d4bc0e7afbaff708406bf2713 "pdflatex"
+  "main.aux" 1727702656 19025 2bb8355d4bc0e7afbaff708406bf2713 "pdflatex"
   "main.bbl" 1727702553 1893 4dd05dcc18cf1bbf04bf71b96094ac32 "bibtex main"
-  "main.out" 1727702555 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1727702545 40265 31e1c34c18738dabf779e2eb18ff16c6 ""
+  "main.out" 1727702652 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1727702650 40258 6d2549cef1daca07f468eb627110ca22 ""
   (generated)
   "main.aux"
   "main.log"
