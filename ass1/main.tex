@@ -205,12 +205,12 @@ The output voltage of the non-ideal converter for the ideal duty cycle is shown 
     \end{equation}
     The application of the zero-volts second rule,
     \begin{equation}
-        (1-D)T_s \cdot V_{L \: on} + DT_s \cdot V_{L\:off} = 0
+        DT_s \cdot V_{L \: on} + (1-D)T_s \cdot V_{L\:off} = 0
         \label{equation:zerovoltseconds}
     \end{equation}
     Cancel out $T_s$, then substitute equations $V_L$ equations,
     \begin{equation}
-        (1-D) \cdot V_d+  D\cdot -V_o = 0
+        D \cdot V_d+ (1-D) \cdot -V_o = 0
     \end{equation}
     Therefore, the duty cycle becomes,
     \begin{equation}
@@ -219,11 +219,11 @@ The output voltage of the non-ideal converter for the ideal duty cycle is shown 
     The design specifications desire $V_o$ to be 10V but specifys the input, $V_d$, to be a range of [5,12]V
     For $V_{d\:min}$, the duty cycle ends up being,
     \begin{equation}
-        D = \dfrac{5}{5+10} = 33.33\:\%
+        D = \dfrac{10}{5+10} = 66.67\:\%
     \end{equation}
     and for $V_{d\:max}$,
     \begin{equation}
-        D = \dfrac{10}{12+10} = 54.54\:\%
+        D = \dfrac{10}{12+10} = 45.45\:\%
     \end{equation}
 \newpage
 \subsection{Ideal Simulations}
@@ -352,21 +352,21 @@ The output voltage of the non-ideal converter for the ideal duty cycle is shown 
     \end{equation}
     Applying the zero volt seconds rule, \ref{equation:zerovoltseconds}, and cancelling out Ts,
     \begin{equation}
-        (1-D) \cdot( V_d - V_{Rl1} ) +  D\cdot \dfrac{3.009}{3}(- V_{Rl2} - V_f - V_o) = 0
+        D \cdot( V_d - V_{Rl1} ) + (1-D) \cdot \dfrac{3.009}{3}(- V_{Rl2} - V_f - V_o) = 0
     \end{equation}
     rearranging to make duty cycle the subject,
     \begin{equation}
-        D  = \frac{V_d - V_{Rl1}}{V_d - V_{Rl1} + \dfrac{3.009}{3}(V_{Rl2} + V_f + V_o)}
+        D  = \frac{\dfrac{3.009}{3}(V_{Rl2} + V_f + V_o)}{V_d - V_{Rl1} + \dfrac{3.009}{3}(V_{Rl2} + V_f + V_o)}
     \end{equation}
     Equation \ref{equation:Rp}, is used to calculate $R_{l1} = 1.47$ and referring to the 
     calculated average current, $I_{avg} = 45.45$ mA. The duty cycle can 
-    be calculated for the maximum and minimum of the desired $V_d$ range [5,12]V. For $V_{d\:min}$,
+    be calculated for the maximum and minimum of the desired $V_d$ range [5,12]V. For $V_{d\:max}$,
     \begin{equation}
-        D  = \frac{5 - 1.47\cdot I_{avg}}{5 - 1.47\cdot I_{avg} + \dfrac{3.009}{3}(1.7\cdot I_{avg} + 0.7 + 10)} = 31.33\: \%
+        D  = \frac{\dfrac{3.009}{3}(1.7\cdot I_{avg} + 0.7 + 10)}{12 - 1.47\cdot I_{avg} + \dfrac{3.009}{3}(1.7\cdot I_{avg} + 0.7 + 10)} = 47.53\: \%
     \end{equation}
-    and for $V_d\:max$,
+    and for $V_d\:min$,
     \begin{equation}
-        D  = \frac{12 - 1.47\cdot I_{avg}}{12 - 1.47\cdot I_{avg} + \dfrac{3.009}{3}(1.7\cdot I_{avg} + 0.7 + 10)} = 52.47\: \%
+        D  = \frac{\dfrac{3.009}{3}(1.7\cdot I_{avg} + 0.7 + 10)}{5 - 1.47\cdot I_{avg} + \dfrac{3.009}{3}(1.7\cdot I_{avg} + 0.7 + 10)} = 68.66\: \%
     \end{equation}
 
 \newpage
