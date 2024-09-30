@@ -194,24 +194,24 @@ Figure \ref{fig:Buck_nonIdealModel} displays the Modelica model used to perform 
 \noindent The current through the inductor for $D = 61.44$\% (rated power conditions) is shown in Figure \ref{fig:buck_Current}. An RMS current of 1.2847 A is observed which matches the theoretically predicted value and does not exceed the maximum ratings of the devices. The inductor current for a load of (A) 470 $\Omega$ and (B) 475 $\Omega$ is shown in Figure \ref{fig:buck_NIDCM}. The inductor current for the 475 $\Omega$ passes through the 0 A crossing for a period of time. This indicates that the circuit has entered DCM. The 470 $\Omega$ load results in a current which gets close to the 0 A crossing. Therefore the load resistance for the CCM-DCM boundary is expected to lie in the range $470 \le R_{Load} \le 475$ $\Omega$. \par
 \newpage
 
-% \begin{figure}[h]
-%     \centering
-%     % \includegraphics[width=0.6\textwidth]{buck_Current}
-%     \caption{Inductor current for the non ideal Buck converter under rated power conditions.}
-%     \label{fig:buck_Current}
-% \end{figure}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{buck_NI_output_newD.png}
+    \caption{Inductor current for the non ideal Buck converter under rated power conditions.}
+    \label{fig:buck_Current}
+\end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[htp]
     \centering
     \includegraphics[width=0.6\textwidth]{buck_NIDCM}
     \caption{Inductor current for the non ideal Buck converter under rated power conditions.}
     \label{fig:buck_NIDCM}
 \end{figure}
-\newpage
+
 \subsection{Results}
 The constructed Buck converter is shown in Figure \ref{fig:buck_real}. The circuit was constructed on a breadboard and multicore twisted wires were used. The PWM input signal for the gate driver was generated using a signal generator and the output voltage was monitored using an oscilloscope. \par
 
-\begin{figure}[h]
+\begin{figure}[htp]
     \centering
     \includegraphics[width=0.7\textwidth]{buck_real}
     \caption{Constructed Buck converter.}
@@ -222,13 +222,13 @@ The constructed Buck converter is shown in Figure \ref{fig:buck_real}. The circu
 \vspace{5mm}
 \noindent To explore the output ripple of the converter once the large transients are no longer present, Figure \ref{fig:buck_expV_ripple} displays the steady state output voltage of the Buck converter for $D = 62$\% . A maximum voltage of 5.14 V and a minimum voltage of 5.02 V is observed which results in an output voltage ripple of 120 mV. This output ripple is much larger than the specified ripple of 25 mV and is larger than the simulated ripple of 27.739 mV.  This is likely due to the parasitic inductances of the wires used. This ripple could be reduced through minimizing the length of the wires and by using a larger output capacitor. A larger output capacitor will result in more attenuation of these high frequency ripple components.\par
 \newpage
-\begin{figure}[h!]
+\begin{figure}[htp]
     \centering
     \includegraphics[width=0.7\textwidth]{buck_expV_newD}
     \caption{Output voltage of the Buck converter (blue) for a duty cycle of 62\%. The yellow waveform is the input PWM signal to the gate driver. An RMS voltage of 5.081 V is observed.}
     \label{fig:buck_expV_newD}
 \end{figure}
-\begin{figure}[h!]
+\begin{figure}[htp]
     \centering
     \includegraphics[width=0.7\textwidth]{buck_expV_ripple}
     \caption{Output voltage of the Buck converter in steady state. A ripple voltage of 120 mV is observed.}
@@ -352,6 +352,16 @@ The constructed Buck converter is shown in Figure \ref{fig:buck_real}. The circu
     Hence, for $V_{d\:max}$, $C$ = 1.136 $\mu$F and for $V_{d\:min}$, $C$ = 1.56 $\mu$F
 \newpage
 \subsection{Ideal Simulations}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{ModellicaIdeal.PNG}
+    \caption{Ideal Flyback, Output Voltage $V_o$ = 10 V, ($V_d$ = 12 V, $D$ = 0.4545)}
+    \label{fig:IdealModellica}
+\end{figure}
+
+\newpage
+
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.75\textwidth]{IdealSim12V.png}
@@ -498,7 +508,17 @@ The constructed Buck converter is shown in Figure \ref{fig:buck_real}. The circu
 \newpage
 
 \subsection{Non-Ideal Simulations}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{ModellicaNonIdeal.PNG}
+    \caption{Non Ideal Flyback, Output Voltage $V_o$ = 9.21 V, ($V_d$ = 5 V, $D$ = 0.6667)}
+    \label{fig:NonIdealModellica}
+\end{figure}
+\noindent
 In all non-ideal simulations, the capacitance is set to 1 $\mu$F. This is less than what was calculated, \ref{equation:capacitance}, and it should be noted.
+
+\newpage
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.75\textwidth]{NonIdealSim12V(calculated).png}

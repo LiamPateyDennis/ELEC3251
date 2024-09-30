@@ -340,7 +340,9 @@ INPUT .\figures\buck_NI_output_newD.png
 INPUT .\figures\buck_NI_output_newD.png
 INPUT .\figures\buck_NI_output_newD.png
 INPUT .\figures\buck_NI_output_newD.png
-INPUT C:\Users\pdidd\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT .\figures\buck_NI_output_newD.png
+INPUT .\figures\buck_NI_output_newD.png
+INPUT .\figures\buck_NI_output_newD.png
 INPUT .\figures\buck_NIDCM.png
 INPUT .\figures\buck_NIDCM.png
 INPUT .\figures\buck_NIDCM.png
@@ -379,6 +381,12 @@ INPUT .\figures\buck_expI_DCM.png
 INPUT .\figures\buck_expI_DCM.png
 INPUT C:\Users\pdidd\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\pdidd\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT .\figures\ModellicaIdeal.PNG
+INPUT .\figures\ModellicaIdeal.PNG
+INPUT .\figures\ModellicaIdeal.PNG
+INPUT .\figures\ModellicaIdeal.PNG
+INPUT .\figures\ModellicaIdeal.PNG
+INPUT .\figures\ModellicaIdeal.PNG
 INPUT .\figures\IdealSim12V.png
 INPUT .\figures\IdealSim12V.png
 INPUT .\figures\IdealSim12V.png
@@ -412,6 +420,12 @@ INPUT .\figures\RippleIdealSim5V.png
 INPUT .\figures\RippleIdealSim5V.png
 INPUT .\figures\RippleIdealSim5V.png
 INPUT .\figures\RippleIdealSim5V.png
+INPUT .\figures\ModellicaNonIdeal.PNG
+INPUT .\figures\ModellicaNonIdeal.PNG
+INPUT .\figures\ModellicaNonIdeal.PNG
+INPUT .\figures\ModellicaNonIdeal.PNG
+INPUT .\figures\ModellicaNonIdeal.PNG
+INPUT .\figures\ModellicaNonIdeal.PNG
 INPUT .\figures\NonIdealSim12V(calculated).png
 INPUT .\figures\NonIdealSim12V(calculated).png
 INPUT .\figures\NonIdealSim12V(calculated).png
@@ -493,8 +507,6 @@ INPUT main.bbl
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
-INPUT C:\Users\pdidd\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT C:\Users\pdidd\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\pdidd\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\pdidd\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\pdidd\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
