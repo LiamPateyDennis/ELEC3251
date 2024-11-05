@@ -495,7 +495,7 @@ The constructed Buck converter is shown in Figure \ref{fig:buck_real}. The circu
         D  = \frac{\dfrac{3.009}{3}(V_{Rl2} + V_f + V_o)}{V_d - V_{Rl1} + \dfrac{3.009}{3}(V_{Rl2} + V_f + V_o)}
     \end{equation}
     Equation \ref{equation:Rp}, is used to calculate $R_{l1} = 1.47$. 
-    It is known that the average current, $I_{avg} = 45.45$ mA, \ref{equation:ohm}. The duty cycle can 
+    It is known that the average current, $I_{avg} = 45.45$ mA, \ref{equation:ohm}. The forward biased voltage drop across the diode is 0.7 V,\cite{RN3}. The duty cycle can 
     be calculated for the maximum and minimum of the desired $V_d$ range [5,12]V. For $V_{d\:max}$,
     \begin{equation}
         D  = \frac{\dfrac{3.009}{3}(1.7\cdot I_{avg} + 0.7 + 10)}{12 - 1.47\cdot I_{avg} + \dfrac{3.009}{3}(1.7\cdot I_{avg} + 0.7 + 10)} = 47.53\: \%
@@ -651,16 +651,16 @@ specification, $V_o$ = 10 V, \ref{fig:Practical3}. To fix this, the duty cycle w
 until output voltage specification was met, see \ref{fig:Practical4}. This increased the duty cycle,
 from 0.688 to 0.734 and does not meet theory expectations. 
 \\\\
-The output voltage noise was much greater in the buck converter. This is seen by comparing the buck converter peak-peak measurement, figure \ref{fig:buck_expI_DCM}
-to the flyback converter peak-peak measurement, \ref{fig:Practical1}.  
-This is because when the gate driver was used it was plugged into a breadboard, \ref{fig:Practical} which creates 20 pF between the pins on each side. This is amplified 
+The output voltage noise was much greater in the buck converter. This is seen by comparing the buck converter peak-peak measurement, Figure \ref{fig:buck_expI_DCM}
+to the flyback converter peak-peak measurement, Figure \ref{fig:Practical1}.  
+This is because the gate driver was plugged into a breadboard, \ref{fig:Practical} which creates 20 pF between the pins on each side. This is amplified 
 by switching harmonics, similar to bipolar vs unipolar. In the buck converter,
 the gate driver must drive the gate of the MOSFET to a greater voltage because it is set up in the high side configuration. 
 In the flyback converter, the MOSFET is setup in a low side configuration, which means the gate voltage doesn't require more than 5 V logic high.
 \\\\
 The transformer calculations did not correctly model the simulation and practical behaviour. From the theory in equation \ref{equation:zerovoltseconds}, a ratio was used 
 to determine power lost at the primary. This however does not accurately reflect lost power, which increases with a higher duty cycle. 
-This relationship is viewed by comparing figure (\ref{fig:NonIdealSim12Vcal}, \ref{fig:NonIdealSim12Vtested}) to (\ref{fig:NonIdealSim5Vcal}, \ref{fig:NonIdealSim5Vtested}) and considering Table \ref{tab:duty_cycle}.
+This relationship is viewed by comparing Figure (\ref{fig:NonIdealSim12Vcal}, \ref{fig:NonIdealSim12Vtested}) to (\ref{fig:NonIdealSim5Vcal}, \ref{fig:NonIdealSim5Vtested}) and considering Table \ref{tab:duty_cycle}.
 This occurs because the average current at the primary side will increase with respect to the duty cycle. A better relationship would be to use the voltage inductor law,
 \begin{equation}
     V_{Ll} = L \dfrac{di}{dt}

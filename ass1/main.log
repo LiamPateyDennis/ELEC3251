@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.4)  30 SEP 2024 23:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.4)  30 SEP 2024 23:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -886,7 +886,7 @@ Package pdftex.def Info: figures/RippleIdealSim5V.png  used on input line 402.
 [20]
 
 [21]
-<figures/ModellicaNonIdeal.PNG, id=242, 633.86812pt x 428.35031pt>
+<figures/ModellicaNonIdeal.PNG, id=243, 633.86812pt x 428.35031pt>
 File: figures/ModellicaNonIdeal.PNG Graphic file (type png)
 <use figures/ModellicaNonIdeal.PNG>
 Package pdftex.def Info: figures/ModellicaNonIdeal.PNG  used on input line 514.
@@ -894,32 +894,32 @@ Package pdftex.def Info: figures/ModellicaNonIdeal.PNG  used on input line 514.
 
 
 [22 <./figures/ModellicaNonIdeal.PNG>]
-<figures/NonIdealSim12V(calculated).png, id=251, 453.19313pt x 254.9525pt>
+<figures/NonIdealSim12V(calculated).png, id=252, 453.19313pt x 254.9525pt>
 File: figures/NonIdealSim12V(calculated).png Graphic file (type png)
 <use figures/NonIdealSim12V(calculated).png>
 Package pdftex.def Info: figures/NonIdealSim12V(calculated).png  used on input line 524.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
-<figures/NonIdealSim12V(tested).png, id=252, 453.19313pt x 254.9525pt>
+<figures/NonIdealSim12V(tested).png, id=253, 453.19313pt x 254.9525pt>
 File: figures/NonIdealSim12V(tested).png Graphic file (type png)
 <use figures/NonIdealSim12V(tested).png>
 Package pdftex.def Info: figures/NonIdealSim12V(tested).png  used on input line 531.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
-<figures/PowerNonIdealSim12V.png, id=253, 453.19313pt x 254.9525pt>
+<figures/PowerNonIdealSim12V.png, id=254, 453.19313pt x 254.9525pt>
 File: figures/PowerNonIdealSim12V.png Graphic file (type png)
 <use figures/PowerNonIdealSim12V.png>
 Package pdftex.def Info: figures/PowerNonIdealSim12V.png  used on input line 538.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
-<figures/RippleNonIdealSim12V.png, id=254, 453.19313pt x 254.9525pt>
+<figures/RippleNonIdealSim12V.png, id=255, 453.19313pt x 254.9525pt>
 File: figures/RippleNonIdealSim12V.png Graphic file (type png)
 <use figures/RippleNonIdealSim12V.png>
 Package pdftex.def Info: figures/RippleNonIdealSim12V.png  used on input line 545.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
-<figures/NonIdealSim5V(calculated).png, id=255, 453.19313pt x 254.9525pt>
+<figures/NonIdealSim5V(calculated).png, id=256, 453.19313pt x 254.9525pt>
 File: figures/NonIdealSim5V(calculated).png Graphic file (type png)
 <use figures/NonIdealSim5V(calculated).png>
 Package pdftex.def Info: figures/NonIdealSim5V(calculated).png  used on input line 552.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
-<figures/NonIdealSim5V(tested).png, id=256, 453.19313pt x 254.9525pt>
+<figures/NonIdealSim5V(tested).png, id=257, 453.19313pt x 254.9525pt>
 File: figures/NonIdealSim5V(tested).png Graphic file (type png)
 <use figures/NonIdealSim5V(tested).png>
 Package pdftex.def Info: figures/NonIdealSim5V(tested).png  used on input line 559.
@@ -928,7 +928,7 @@ File: figures/PowerNonIdealSim12V.png Graphic file (type png)
 <use figures/PowerNonIdealSim12V.png>
 Package pdftex.def Info: figures/PowerNonIdealSim12V.png  used on input line 566.
 (pdftex.def)             Requested size: 362.77264pt x 204.08286pt.
-<figures/RippleNonIdealSim5V.png, id=257, 453.19313pt x 254.9525pt>
+<figures/RippleNonIdealSim5V.png, id=258, 453.19313pt x 254.9525pt>
 File: figures/RippleNonIdealSim5V.png Graphic file (type png)
 <use figures/RippleNonIdealSim5V.png>
 Package pdftex.def Info: figures/RippleNonIdealSim5V.png  used on input line 573.
@@ -942,7 +942,7 @@ Package pdftex.def Info: figures/RippleNonIdealSim5V.png  used on input line 573
 [25 <./figures/NonIdealSim5V(calculated).png> <./figures/NonIdealSim5V(tested).png>]
 
 [26 <./figures/RippleNonIdealSim5V.png>]
-<figures/Flyback_Built.jpg, id=290, 4047.12pt x 3035.34pt>
+<figures/Flyback_Built.jpg, id=291, 4047.12pt x 3035.34pt>
 File: figures/Flyback_Built.jpg Graphic file (type jpg)
 <use figures/Flyback_Built.jpg>
 Package pdftex.def Info: figures/Flyback_Built.jpg  used on input line 583.
@@ -950,22 +950,22 @@ Package pdftex.def Info: figures/Flyback_Built.jpg  used on input line 583.
 
 
 [27 <./figures/Flyback_Built.jpg>]
-<figures/Flyback/tek0001.png, id=298, 803.0pt x 481.8pt>
+<figures/Flyback/tek0001.png, id=299, 803.0pt x 481.8pt>
 File: figures/Flyback/tek0001.png Graphic file (type png)
 <use figures/Flyback/tek0001.png>
 Package pdftex.def Info: figures/Flyback/tek0001.png  used on input line 610.
 (pdftex.def)             Requested size: 338.58632pt x 203.15594pt.
-<figures/Flyback/tek0002.png, id=299, 803.0pt x 481.8pt>
+<figures/Flyback/tek0002.png, id=300, 803.0pt x 481.8pt>
 File: figures/Flyback/tek0002.png Graphic file (type png)
 <use figures/Flyback/tek0002.png>
 Package pdftex.def Info: figures/Flyback/tek0002.png  used on input line 617.
 (pdftex.def)             Requested size: 338.58632pt x 203.15594pt.
-<figures/Flyback/tek0003.png, id=300, 803.0pt x 481.8pt>
+<figures/Flyback/tek0003.png, id=301, 803.0pt x 481.8pt>
 File: figures/Flyback/tek0003.png Graphic file (type png)
 <use figures/Flyback/tek0003.png>
 Package pdftex.def Info: figures/Flyback/tek0003.png  used on input line 624.
 (pdftex.def)             Requested size: 338.58632pt x 203.15594pt.
-<figures/Flyback/tek0004.png, id=301, 803.0pt x 481.8pt>
+<figures/Flyback/tek0004.png, id=302, 803.0pt x 481.8pt>
 File: figures/Flyback/tek0004.png Graphic file (type png)
 <use figures/Flyback/tek0004.png>
 Package pdftex.def Info: figures/Flyback/tek0004.png  used on input line 631.
@@ -1012,9 +1012,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  108i,12n,107p,11015b,1143s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (32 pages, 6270628 bytes).
+Output written on main.pdf (32 pages, 6270842 bytes).
 PDF statistics:
- 477 PDF objects out of 1000 (max. 8388607)
+ 478 PDF objects out of 1000 (max. 8388607)
  120 named destinations out of 1000 (max. 500000)
  282 words of extra memory for PDF output out of 10000 (max. 10000000)
 
