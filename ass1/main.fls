@@ -1,6 +1,6 @@
-PWD d:\github\elec3251\ass1
+PWD D:\PortableGit\code\elec3251\ass1
 INPUT C:\Users\pdidd\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\github\elec3251\ass1\main.tex
+INPUT d:\PortableGit\code\elec3251\ass1\main.tex
 OUTPUT main.log
 INPUT C:\Users\pdidd\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
 INPUT C:\Users\pdidd\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
