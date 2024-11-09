@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1731121278.02392 "main.aux" "main.bbl" "main" 1731121282.03031 0
+["bibtex main"] 1731122361.7574 "main.aux" "main.bbl" "main" 1731122433.73412 0
   "./references.bib" 1730848157.05234 917 7c06fd7bd5d6ede1f1a6038ef3d5ac6b ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/bibtex/bst/feupphdteses/IEEEtranN.bst" 1363102770 63465 52e4631827d9e4cab8ed25dc93fa95dd ""
-  "main.aux" 1731121280.91627 4239 eda939af5cc996c01c5dfa2d37dc7398 "pdflatex"
+  "main.aux" 1731122432.63512 5032 e676f1b37d83b7c3a19c08eb6d515ecb "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1731121278.47254 "d:/PortableGit/code/elec3251/ass2/main.tex" "main.pdf" "main" 1731121282.03225 0
+["pdflatex"] 1731122429.90062 "d:/PortableGit/code/elec3251/ass2/main.tex" "main.pdf" "main" 1731122433.73602 0
   "C:/Users/pdidd/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1727096059.24293 215609 685af41ea3cd3ac45395c8bb53311c2c ""
   "C:/Users/pdidd/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725413735.32914 24265373 2217873b92a948a9e3f583e2459e4067 ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -178,16 +178,21 @@
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "LOGO_Square.pdf" 1730813351.03262 5246 5d91e06561c849b122648a494accb7e5 ""
-  "d:/PortableGit/code/elec3251/ass2/main.tex" 1731121273.18828 5807 6cc068faa92d0c1ca3c3385770ae921c ""
+  "d:/PortableGit/code/elec3251/ass2/main.tex" 1731122428.76712 6887 313e80d9022ee412f1e78286367bbf16 ""
   "figures/Bipolar_Ic_0.2.png" 1731121188.40927 98899 6a4f22382b826d303d299be31c1767e0 ""
+  "figures/Bipolar_Ic_10.png" 1731121188.41027 62651 7afbe9db4e41bb8c7b450a948088ccd8 ""
   "figures/Bipolar_Vc_0.2.png" 1731121188.41228 60850 f899e874c287b9ac058bd16e4b3d1a65 ""
+  "figures/Bipolar_Vc_10.png" 1731121188.41328 63119 b3c9536fd89ceadffef8a868dc467755 ""
   "figures/Bipolar_sw.png" 1731121188.41427 54296 f419bf185de380a098c9ba4fd57d10ee ""
+  "figures/Set-Up.PNG" 1731121188.42027 225273 dcb0ba3b8f0728b841b1496c9e0636c8 ""
   "figures/Unipolar_Ic_0.2.png" 1731121188.42231 88311 76a6adee4731c0ab294acb1f2696e7a8 ""
+  "figures/Unipolar_Ic_10.png" 1731121188.42331 85184 3aecac01688ad8a46383e34a407cc628 ""
   "figures/Unipolar_Vc_0.2.png" 1731121188.42432 60808 24b7c05ce904f10a99a17294e54bf11c ""
+  "figures/Unipolar_Vc_10.png" 1731121188.42927 63141 9094aacd78568306d8c9d62aef835fed ""
   "figures/Unipolar_sw.png" 1731121188.42927 55551 db181d00e35cf1e12cd485c9affeeaec ""
-  "main.aux" 1731121280.91627 4239 eda939af5cc996c01c5dfa2d37dc7398 "pdflatex"
-  "main.bbl" 1731121278.37328 939 19b36d108c42d0636c40866c25cbd92e "bibtex main"
-  "main.out" 1731121280.48128 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.aux" 1731122432.63512 5032 e676f1b37d83b7c3a19c08eb6d515ecb "pdflatex"
+  "main.bbl" 1731122362.20224 939 19b36d108c42d0636c40866c25cbd92e "bibtex main"
+  "main.out" 1731122431.85712 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "main.aux"
   "main.log"

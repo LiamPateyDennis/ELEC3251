@@ -94,12 +94,18 @@ This test involved setting a constant sinusoid input at the H-bridge controller.
 \end{figure}
 \newpage
 \noindent
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Set-Up.PNG}
+    \caption{How to set bipolar and unipolar switching}
+    \label{fig:Set Up}
+\end{figure}
 The switching frequency was set to 20$\: kHz$. The current sensor, Ic was added to measure current 
 through the capacitor. The voltage sensor for the capacitor was named Vc. The simulation was run twice, at 0.2 s and at 10 s. This allows the 
 viewing of different frequency components. The numbers of cells in series for the solar cell was 850. The capacitance was set to 56 mF. The some experimentation,
 it was found that the input supply was 5kW.
+\newpage
 \subsection{Results}
-
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.75\textwidth]{Bipolar_Vc_0.2.png}
@@ -124,9 +130,37 @@ it was found that the input supply was 5kW.
     \caption{Unipolar $I_c$, current through capacitor, Sim Time = 0.2 s}
     \label{fig:UnipolarIc0.2}
 \end{figure}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Bipolar_Vc_10.png}
+    \caption{Bipolar $V_c$, capacitor voltage (PV to GND), Sim Time = 10 s}
+    \label{fig:BipolarVc10}
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Unipolar_Vc_10.png}
+    \caption{Unipolar $V_c$, capacitor voltage (PV to GND), Sim Time = 10 s}
+    \label{fig:UnipolarVc10}
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Bipolar_Ic_10.png}
+    \caption{Bipolar $I_c$, current through capacitor, Sim Time = 10 s}
+    \label{fig:BipolarIc10}
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Unipolar_Ic_10.png}
+    \caption{Unipolar $I_c$, current through capacitor, Sim Time = 10 s}
+    \label{fig:UnipolarIc10}
+\end{figure}
+\newpage
 \subsection{Discussion}
-In both switching methods, the capacitor voltage (PV) were equal, see Figure 4 \& 5 at \ref{fig:BipolarVc0.2}. 
-At time 0.05 s the H-bridge starts switching to produce a current. There are noticable harmonics. This frequency component can 
+Comparing both switching methods, the capacitor voltage (PV) was basically equal, see Figure \ref{fig:BipolarVc0.2}. 
+At time 0.05 s the H-bridge starts switching to produce a current. In the 10s simulation,  \ref{fig:BipolarVc10},
+a steady state of 
+
+This frequency component can 
 calculated by measuring its period, which inferred from Figure \ref{fig:BipolarVc0.2} is about 0.01 s. For wave relationship,
 \begin{equation}
     f = \dfrac{1}{T}
@@ -144,7 +178,6 @@ for bipolar and from 15 to -20 for unpolar.
 
 
 \section{Grid Connected Inverters}
-\section{Space Vector Control System Design}
 
 
 
