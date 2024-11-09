@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1731120431.86209 "main.aux" "main.bbl" "main" 1731120436.73809 0
+["bibtex main"] 1731120774.11741 "main.aux" "main.bbl" "main" 1731120777.8422 0
   "./references.bib" 1730848157.05234 917 7c06fd7bd5d6ede1f1a6038ef3d5ac6b ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/bibtex/bst/feupphdteses/IEEEtranN.bst" 1363102770 63465 52e4631827d9e4cab8ed25dc93fa95dd ""
-  "main.aux" 1731120435.28209 2623 43162e4e22bde613a93dac25aadbbcef "pdflatex"
+  "main.aux" 1731120776.7522 2623 43162e4e22bde613a93dac25aadbbcef "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1731120432.81026 "d:/PortableGit/code/elec3251/ass2/main.tex" "main.pdf" "main" 1731120436.74001 0
+["pdflatex"] 1731120774.65495 "d:/PortableGit/code/elec3251/ass2/main.tex" "main.pdf" "main" 1731120777.84419 0
   "C:/Users/pdidd/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1727096059.24293 215609 685af41ea3cd3ac45395c8bb53311c2c ""
   "C:/Users/pdidd/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725413735.32914 24265373 2217873b92a948a9e3f583e2459e4067 ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -165,12 +165,12 @@
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "LOGO_Square.pdf" 1730813351.03262 5246 5d91e06561c849b122648a494accb7e5 ""
-  "d:/PortableGit/code/elec3251/ass2/main.tex" 1731120426.67309 3358 6b3e8de308014c271b90fadf3808a4f8 ""
-  "figures/Bipolar_sw.png" 1730872194.52945 54296 f419bf185de380a098c9ba4fd57d10ee ""
-  "figures/Unipolar_sw.png" 1730872234.26928 55551 db181d00e35cf1e12cd485c9affeeaec ""
-  "main.aux" 1731120435.28209 2623 43162e4e22bde613a93dac25aadbbcef "pdflatex"
-  "main.bbl" 1731120432.64709 939 19b36d108c42d0636c40866c25cbd92e "bibtex main"
-  "main.out" 1731120435.10109 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "d:/PortableGit/code/elec3251/ass2/main.tex" 1731120768.99109 3358 6b3e8de308014c271b90fadf3808a4f8 ""
+  "figures/Bipolar_sw.png" 1731120768.96709 54296 f419bf185de380a098c9ba4fd57d10ee ""
+  "figures/Unipolar_sw.png" 1731120768.98409 55551 db181d00e35cf1e12cd485c9affeeaec ""
+  "main.aux" 1731120776.7522 2623 43162e4e22bde613a93dac25aadbbcef "pdflatex"
+  "main.bbl" 1731120774.56319 939 19b36d108c42d0636c40866c25cbd92e "bibtex main"
+  "main.out" 1731120776.58019 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "main.aux"
   "main.log"
