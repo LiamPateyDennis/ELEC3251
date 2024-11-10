@@ -42,7 +42,7 @@
 \fancyfoot[LE,RO]{\thepage} % Page number on left footer of even pages and right footer of odd pages
 % \fancyfoot[RE,LO]{ELEC3251} % Left footer on odd pages, right footer on even pages
 
-\hypersetup{colorlinks, citecolor=voilet, linkcolor=blue, urlcolor=blue}
+\hypersetup{colorlinks, citecolor=blue, linkcolor=blue, urlcolor=blue}
 
 
 \begin{document}
@@ -104,10 +104,11 @@ This test involved setting a constant sinusoid input at the H-bridge controller.
     \caption{How to set bipolar and unipolar switching}
     \label{fig:Set Up}
 \end{figure}
+\newline
+\noindent
 The switching frequency was set to 20$\: kHz$. The current sensor, Ic was added to measure current 
 through the capacitor. The voltage sensor for the capacitor was named Vc. The simulation was run twice, at 0.2 s and at 10 s. This allows the 
-viewing of different frequency components. The numbers of cells in series for the solar cell was 850. The capacitance was set to 56 mF. The some experimentation,
-it was found that the input supply was 5kW.
+viewing of different frequency components. The numbers of cells in series for the solar cell was 850. The capacitance was set to 56 mF.
 \newpage
 \subsection{Results}
 \begin{figure}[htp]
@@ -184,6 +185,7 @@ it was found that the input supply was 5kW.
 \end{figure}
 \newpage
 \subsection{Discussion}
+\label{sec:discussion}
 Comparing both switching methods, the capacitor voltage (PV) was basically equal, see Figure \ref{fig:BipolarVc0.2}. 
 At time 0.05 s the H-bridge starts switching to produce a current. 
 For the PV cell, the aim is to obtain 5kW of output power. If power, P is 
@@ -202,14 +204,13 @@ voltage, $V_c$. This is 373 $\pm$ 5 V. For its RMS,
     373 + \dfrac{5}{\sqrt{2}} = 376.5 \: V_{RMS}
     \label{eq:V_rms}
 \end{equation} 
-This steady state voltage is the MPP (Maximum Power Point). For this simulation, it happened to be 3.8 kW.
+This steady state voltage is the MPP (Maximum Power Point). For this simulation, it happened to be 4 kW.
 \newline
 \newline
 \noindent
 An analysis of the different $V_c$ plots show many different frequency components.
 The first frequency component is the switching frequency, \ref{fig:BipolarVcripple} and \ref{fig:UnipolarVcripple}.
-The second frequency component comes from switching trying to match the grid sinusoid, \ref{fig:BipolarIc0.2}. This $f$, is 100 $Hz$. This comes 
-from the grid connected voltage. This is 50 $Hz$,
+The second frequency component comes from the grid sinusoid, \ref{fig:BipolarIc0.2}. This $f$, is 100 $Hz$. The grid connected voltage is 50 $Hz$,
 that makes this signal, the second harmonic. The same frequency can 
 be seen from the current plots, Figure \ref{fig:BipolarIc0.2}.
 There is a distinct difference between the plots, due to the different switching modes, 
@@ -217,11 +218,10 @@ see Figure \ref{fig:UnipolarIc0.2}. This is expected, as
 harmonic disturbance should be less under unipolar switching. The greatest piece of 
 evidence, can be inferred from the magnitudes of the current plots. 
 As the magnitude of the harmonics is from 40 to -20
-for bipolar and from 15 to -20 for unipolar. This can be proved by 
-calculating and plotting rms capacitor current which is performed below. The last
+for bipolar and from 15 to -20 for unipolar. The last
 frequency component was at the steady state, \ref{fig:BipolarVc10}. This frequency component 
-is harmonic distortion. We can confirm this by checking for a common denominator as this means its an harmonic multiple. The period, is about 1.2 s which 
-was estimated by counting periods within a 2-8 s window. For the common denominator information that matters,
+is harmonic distortion. We can confirm this by checking for a common denominator as this means it is a harmonic multiple. The period, is about 1.2 s which 
+was estimated by counting periods within the 2-8 s window. For the common denominator information that matters,
 \begin{equation} 
     \hspace{6cm} \dfrac{T_{max}}{a \cdot T_{small}} = \mathbb{N} \hspace{3cm} a = 1,3,5,7,11 ...
 \end{equation}
@@ -249,12 +249,12 @@ To add all the frequency components together, the capacitor equation is expanded
 \begin{equation}
     i_c = C\left(\dfrac{dV_1}{dt} + \dfrac{dV_2}{dt} + \dfrac{dV_3}{dt}\right)
 \end{equation}
-which to discrete,
+which when converted to discrete is this,
 \begin{equation}
     i_c = C\left(\dfrac{\Delta V_1}{T_1} + \dfrac{\Delta V_2}{0.5T_2} + \dfrac{\Delta V_3}{0.5T_3}\right)
     \label{eq:current_eq}
 \end{equation}
-Using \ref{eq:current_eq}, Estimates of the period and $\Delta V_c$ for each component from plots \ref{fig:BipolarVcripple}, \ref{fig:BipolarVc0.2}, \ref{fig:BipolarVc10} for bipolar leads to this,
+Using \ref{eq:current_eq}, An estimate of the period and $\Delta V_c$ for each component can be determined using wolfram simulation centre plots \ref{fig:BipolarVcripple}, \ref{fig:BipolarVc0.2}, \ref{fig:BipolarVc10}. Subbing in for bipolar switching leads to this,
 \begin{equation}
     i_c = 56\cdot 10^{-3}\left(0.0054\cdot 20000 + \dfrac{0.5}{0.5 \cdot 0.01} + \dfrac{10}{0.5 \cdot 1.2}\right) = 12.58 \: A_{RMS} \tag*{}
 \end{equation}
@@ -263,7 +263,7 @@ then setting the RMS block to frequency 1/1.2 $Hz$. The simulated RMS current is
 \\
 \\
 \noindent
-For the unipolar simulation, information from plots \ref{fig:UnipolarVcripple}, \ref{fig:UnipolarVc0.2}, \ref{fig:UnipolarVc10}
+For the unipolar simulation, information is gathered the same but using plots \ref{fig:UnipolarVcripple}, \ref{fig:UnipolarVc0.2}, \ref{fig:UnipolarVc10}.
 \begin{equation}
     i_c = 56\cdot 10^{-3}\left(0.0022\cdot 20000 + \dfrac{0.5}{0.5 \cdot 0.01} + \dfrac{10}{0.5 \cdot 1.2}\right) = 8.98 \: A_{RMS} \tag*{}
 \end{equation}
@@ -272,7 +272,7 @@ This is to be expected, as this was an estimate. Technically,
 \begin{equation}
     \dfrac{\Delta V_3}{0.5T_3} = \dfrac{\Delta V_{3rd}}{0.5T_{3rd}} + \dfrac{\Delta V_{5th}}{0.5T_{5th}}
 \end{equation}
-This is true for the switching and grid noise components. If more time was given, an FFT would have been simulated. 
+This is true for the switching and grid noise components as the each have a 3rd and 5th harmonic. Even if that was the case, there may still be an error as higher order harmonic components, while much smaller in magnitude, do exist and will make noise. This could make up for the missing error percentages. 
 \newpage
 \section{Grid Connected Inverters}
 \subsection{Method}
@@ -286,31 +286,99 @@ This is true for the switching and grid noise components. If more time was given
 This simulation tests the control systems ability to perform output 
 disturbance rejection. If the load chabnges,
 how does the system react. This simulation changes the real part 
-of the load from 5 to 2.5 $\Omega$ at 0.25s. The control system starts at
+of the load from 5 to 2.5 $\Omega$ at 0.4s. The control system starts at
 0.005 s. The H-bridge starting switching at 0.05 s. To reach steady 
-state earlier, the capacitor initialisation voltage was set to 360 V.
+state earlier, the capacitor initialisation voltage was set to 360 V. This is changed for the MPPT section, at the end. This allowed more accurate simulations so the current did not do a massive jump initially. 
+\\
+\\
+\noindent
+To check the power factor alignment, the simulation was changed manually to a different inductance for different simulations. The inclusion of the switch like for the resistor did not work. The system took too long to adjust. For the MPPT section, the initial capacitor voltage was set to 432 V.
 \newpage
 \subsection{Results}
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.75\textwidth]{I_delivered_0.8.png}
-    \caption{Current delivered from inverter}
+    \caption{Changing Real, Current delivered from inverter, Sim Time = 1 s}
     \label{fig:deliveredcurrent}
 \end{figure}
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.75\textwidth]{Grid_current_0.8.png}
-    \caption{Current delivered to load from grid voltage source}
+    \caption{Changing Real, Current delivered to load from grid voltage source, Sim Time = 1 s}
     \label{fig:gridcurrent}
 \end{figure}
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=0.8\textwidth]{Grid_voltage_0.8.png}
-    \caption{Grid Voltage}
-    \label{fig:gridvoltage}
+    \includegraphics[width=0.8\textwidth]{Grid_IDel_0.3.png}
+    \caption{Changing Real, Grid Voltage and Delievered Current, Sim Time = 0.3 - 0.5 s}
+    \label{fig:gridVdelI}
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Grid_VandI_0.3.png}
+    \caption{Changing Real, Grid Voltage and Grid Current, Sim Time = 0.3 - 0.5 s}
+    \label{fig:gridVgridI}
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{CurrentsLowL.png}
+    \caption{Currents Low Inductance, 0.00001H}
+    \label{fig:LowL}
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{CurrentsHighL.png}
+    \caption{Currents High Inductance, 0.08 H}
+    \label{fig:HighL}
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{PF2.png}
+    \caption{Power Factor Test, Low Inductance, 0.00001 H}
+    \label{fig:pf2}
+\end{figure}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{PF1.png}
+    \caption{Power Factor Test, High Inductance, 0.013 H}
+    \label{fig:pf1}
+\end{figure}
+\newpage
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{MPPT.png}
+    \caption{MPPT, $P_{PV}$}
+    \label{fig:MPPT}
 \end{figure}
 \newpage
 \subsection{Discussion}
+The control system tracks the reference voltage. The system stays constant upon disturbances, \ref{fig:gridVdelI}.
+The grid has to adjust instead of inverter, \ref{fig:gridVgridI}. This keeps the voltage and power the same, maximising the output power
+by the solar panels. When an inductive load is added in, the same occurs \ref{fig:pf1}. The inverter tracks the reference and controls the current
+so that it stays in line with the voltage. This maximises output power. \\
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Control_System.PNG}
+    \caption{Control System Block Diagram, from \cite{Control}}
+    \label{fig:Control}
+\end{figure}
+\newline
+The inverter can be broken into three parts. The Phase Locked Loop, The Controller, and MPPT. The phase locked loop tracks the reference, the grid supply.
+This gives the contoller the information required to create a varying PWM that mimics a sinusoid after filtering. The MPPT tracks the output power by the PV cell.
+PV cells aren't constant voltage like a battery. The voltage can vary based on the load resistance or based on the current. The MPPT tracks the current
+and the voltage to maximise output power, finding the optimal point. The output, a desired current, is fed through 
+the main controller. The delivered current, has some noise to it, \ref{fig:HighL}. 
+This is likely due the 3rd and 5th harmonics, referenced \ref{sec:discussion} and possibly due to control system delays. 
+\newpage
+\noindent
+For the MPPT, it occurred in the 10 s simulations from the first part, \ref{fig:BipolarVc10}. Even though it started at 432 V, it optimised the system for maximum
+power output and brought the voltage down to the steady state of 376.5 $V_{RMS}$. 
+The MPPT can be seen maximising the output by looking at the link power, \ref{fig:MPPT}. 
+\\
+\\
+\noindent
+Everything else in the inverter that is not the PV cells, the Hbridge, the grid and the load is the outputs and inputs to the blocks within the inverter. It is only information, and might require a conversion, for example the park transform but it is still the same information, just in a different form. The information and conversions required depend on the type of controller. This was simulated using the proportional resonant controller, but using space vectors and park transforms it is possible to just use a PI controller. 
+ 
 
 
 \newpage

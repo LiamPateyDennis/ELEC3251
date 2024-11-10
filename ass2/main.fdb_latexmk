@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1731212709.87596 "main.aux" "main.bbl" "main" 1731212715.80349 0
-  "./references.bib" 1730848157.05234 917 7c06fd7bd5d6ede1f1a6038ef3d5ac6b ""
+["bibtex main"] 1731237530.11187 "main.aux" "main.bbl" "main" 1731238391.02762 0
+  "./references.bib" 1731230860.98323 1101 727d106f54a358f07220f21438d653c4 ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/bibtex/bst/feupphdteses/IEEEtranN.bst" 1363102770 63465 52e4631827d9e4cab8ed25dc93fa95dd ""
-  "main.aux" 1731212714.50749 8553 437c92ade7b39af59a820c9d87747b55 "pdflatex"
+  "main.aux" 1731238389.78659 10743 b5cef6869838f9c540afc2ae6f140bea "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1731212710.32245 "d:/PortableGit/code/elec3251/ass2/main.tex" "main.pdf" "main" 1731212715.80543 0
+["pdflatex"] 1731238383.81787 "d:/PortableGit/code/elec3251/ass2/main.tex" "main.pdf" "main" 1731238391.02961 0
   "C:/Users/pdidd/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1727096059.24293 215609 685af41ea3cd3ac45395c8bb53311c2c ""
   "C:/Users/pdidd/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725413735.32914 24265373 2217873b92a948a9e3f583e2459e4067 ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -194,7 +194,7 @@
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/pdidd/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "LOGO_Square.pdf" 1730813351.03262 5246 5d91e06561c849b122648a494accb7e5 ""
-  "d:/PortableGit/code/elec3251/ass2/main.tex" 1731212703.10549 13283 59ac2a3375c17922920009525ac585e2 ""
+  "d:/PortableGit/code/elec3251/ass2/main.tex" 1731238382.80759 17526 d99c669b18bc83f93cbc98c932f81265 ""
   "figures/Bipolar_Ic_0.2.png" 1731122674.66818 98899 6a4f22382b826d303d299be31c1767e0 ""
   "figures/Bipolar_Ic_10.png" 1731122674.67018 62651 7afbe9db4e41bb8c7b450a948088ccd8 ""
   "figures/Bipolar_Ic_rms.png" 1731200308.29992 17813 15d399c992223a21637bdcec8339b419 ""
@@ -202,9 +202,16 @@
   "figures/Bipolar_Vc_10.png" 1731122674.67518 63119 b3c9536fd89ceadffef8a868dc467755 ""
   "figures/Bipolar_Vc_ripple.png" 1731134137.61797 23825 9975adea4226b01a9317356937cdc34e ""
   "figures/Bipolar_sw.png" 1731122674.67618 54296 f419bf185de380a098c9ba4fd57d10ee ""
+  "figures/Control_System.PNG" 1731230308.37778 55077 c02f29b67fe59ec1d759641fd966d98b ""
+  "figures/CurrentsHighL.png" 1731222378.91922 43356 7c13f45f0a3cb57bbb9df321f5c5e8ac ""
+  "figures/CurrentsLowL.png" 1731220283.55321 43306 6c59a8c1f86f4e4b3e970c09d441dfa4 ""
+  "figures/Grid_IDel_0.3.png" 1731215240.73707 39111 8f4fccc6bc6fb0bde62e60f8b0af3457 ""
+  "figures/Grid_VandI_0.3.png" 1731215219.3748 41155 7180e0b05ed9bbd3c5d8924d4ed4bc65 ""
   "figures/Grid_current_0.8.png" 1731212062.49439 32399 c31bf3bfdf6722288b271e2169f77057 ""
-  "figures/Grid_voltage_0.8.png" 1731212196.43039 37611 236f9b811358ea551693d2611bde9692 ""
   "figures/I_delivered_0.8.png" 1731212131.26738 35150 81b60f08b9e30fd9b366e808afd25b2e ""
+  "figures/MPPT.png" 1731235478.29895 39135 60ff91f3b97f96df60c1c2c71ab86b6b ""
+  "figures/PF1.png" 1731228779.17951 52269 20c3f1eb995067a5cf2c613aadf8716c ""
+  "figures/PF2.png" 1731229299.60617 50993 f4a1eae40290a2e27f82c1bb12e35f68 ""
   "figures/Set-Up.PNG" 1731122674.68618 225273 dcb0ba3b8f0728b841b1496c9e0636c8 ""
   "figures/Set-Up2.PNG" 1731210563.43951 70272 c0885704df67fb8e196915b525c1a7a2 ""
   "figures/Unipolar_Ic_0.2.png" 1731122674.69118 88311 76a6adee4731c0ab294acb1f2696e7a8 ""
@@ -214,9 +221,9 @@
   "figures/Unipolar_Vc_10.png" 1731122674.69818 63141 9094aacd78568306d8c9d62aef835fed ""
   "figures/Unipolar_Vc_ripple.png" 1731206046.46896 28773 7941bb377b0b3d735b2d4a0eefab8ce6 ""
   "figures/Unipolar_sw.png" 1731122674.70018 55551 db181d00e35cf1e12cd485c9affeeaec ""
-  "main.aux" 1731212714.50749 8553 437c92ade7b39af59a820c9d87747b55 "pdflatex"
-  "main.bbl" 1731212710.21849 939 19b36d108c42d0636c40866c25cbd92e "bibtex main"
-  "main.out" 1731212712.38349 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.aux" 1731238389.78659 10743 b5cef6869838f9c540afc2ae6f140bea "pdflatex"
+  "main.bbl" 1731237530.55471 1173 bf97281991771df9581c07d2bd261a6f "bibtex main"
+  "main.out" 1731238386.02862 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "main.aux"
   "main.log"
